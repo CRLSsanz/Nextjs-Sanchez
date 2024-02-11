@@ -1,4 +1,4 @@
-//import Image from "next/image";
+import Image from "next/image";
 //import Link from "next/link";
 
 export default function page() {
@@ -13,7 +13,7 @@ export default function page() {
 
       <section className="mb-20 relative">
         <div>
-          <img src="/images/fondo1.jpg" alt="fondo" className="" />
+          <Image src="/images/fondo1.jpg" width={1000} height={1500} alt="" />
         </div>
         <div className="absolute top-0 w-full">
           <div className="w-full bg-gray-900/10 text-white flex justify-between p-4">
@@ -43,7 +43,12 @@ export default function page() {
           <div className="pl-6">
             <div className="h-full p-4 bg-white rounded mr-4">
               <div className="w-60 h-60 flex items-center">
-                <img src="/images/monitor-uw-curvo.png" alt="" className="" />
+                <Image
+                  src="/images/monitor-uw-curvo.png"
+                  width={1000}
+                  height={1000}
+                  alt=""
+                />
               </div>
               <div className="">
                 <div className="text-center mb-2">
@@ -61,7 +66,12 @@ export default function page() {
           <div className="">
             <div className="h-full p-4 bg-white rounded mr-4">
               <div className="w-60 h-60 flex items-center">
-                <img src="/images/monitor-uw.png" alt="" className="" />
+                <Image
+                  src="/images/monitor-uw.png"
+                  width={1000}
+                  height={1000}
+                  alt=""
+                />
               </div>
               <div className="">
                 <div className="text-center mb-2">
@@ -79,7 +89,12 @@ export default function page() {
           <div className="">
             <div className="h-full p-4 bg-white rounded mr-4">
               <div className="w-60 h-60 flex items-center">
-                <img src="/images/monitor-hd.png" alt="" className="" />
+                <Image
+                  src="/images/monitor-hd.png"
+                  width={1000}
+                  height={1000}
+                  alt=""
+                />
               </div>
               <div className="">
                 <div className="text-center mb-2">
@@ -103,7 +118,12 @@ export default function page() {
           <div className="pl-6">
             <div className="h-full p-4 bg-white rounded mr-4">
               <div className="w-60 h-48 flex items-center">
-                <img src="/images/ram-ddr5.png" alt="" className="" />
+                <Image
+                  src="/images/ram-ddr5.png"
+                  width={1000}
+                  height={1000}
+                  alt=""
+                />
               </div>
               <div className="">
                 <div className="text-center mb-2">
@@ -127,7 +147,12 @@ export default function page() {
           <div className="">
             <div className="h-full p-4 bg-white rounded mr-4">
               <div className="w-60 h-48 flex items-center">
-                <img src="/images/ram-ddr4.png" alt="" className="" />
+                <Image
+                  src="/images/ram-ddr4.png"
+                  width={1000}
+                  height={1000}
+                  alt=""
+                />
               </div>
               <div className="">
                 <div className="text-center mb-2">
@@ -151,7 +176,12 @@ export default function page() {
           <div className="">
             <div className="h-full p-4 bg-white rounded mr-4">
               <div className="w-60 h-48 flex items-center">
-                <img src="/images/ram-ddr3.png" alt="" className="" />
+                <Image
+                  src="/images/ram-ddr3.png"
+                  width={1000}
+                  height={1000}
+                  alt=""
+                />
               </div>
               <div className="">
                 <div className="text-center mb-2">
@@ -175,7 +205,12 @@ export default function page() {
           <div className="">
             <div className="h-full p-4 bg-white rounded mr-4">
               <div className="w-60 h-48 flex items-center">
-                <img src="/images/ram-laptop.png" alt="" className="" />
+                <Image
+                  src="/images/ram-laptop.png"
+                  width={1000}
+                  height={1000}
+                  alt=""
+                />
               </div>
               <div className="">
                 <div className="text-center mb-2">
@@ -202,7 +237,7 @@ export default function page() {
       <section>
         <div>
           <div className="mb-20">
-            <img src="/images/ima1.png" alt="fondo" />
+            <Image src="/images/ima1.png" width={1000} height={1000} alt="" />
           </div>
         </div>
       </section>
