@@ -15,7 +15,7 @@ export default function page() {
         <div>
           <Image
             src="/images/fondo1.jpg"
-            width={1000}
+            width={1500}
             height={1500}
             alt="images"
           />
