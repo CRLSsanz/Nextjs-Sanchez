@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Comfortaa, Poppins, Roboto_Condensed } from "next/font/google";
+import {
+  Inter,
+  Comfortaa,
+  Poppins,
+  Raleway,
+  Roboto_Condensed,
+} from "next/font/google";
 import "./globals.css";
 
-const inter = Poppins({
+const inter = Roboto_Condensed({
   weight: ["400", "700"],
   style: ["normal"],
   subsets: ["latin"],

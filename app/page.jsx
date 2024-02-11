@@ -22,7 +22,7 @@ export default function page() {
           </div>
         </div>
 
-        <div className="w-full h-full absolute top-0 bg-gray-900/ px-6">
+        <div className="w-full h-full absolute top-0 bg-gray-900/20 px-6">
           <div className="h-full py-10 text-gray-200 flex flex-col justify-between leading-normal ">
             <h1 className="w-full mt-20 uppercase text-2xl">
               Computer Setup <br />G<span className="text-teal-300">a</span>ming
