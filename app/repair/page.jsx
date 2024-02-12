@@ -3,7 +3,7 @@ import Image from "next/image";
 const page = () => {
   return (
     <div>
-      <section className="relative ">
+      <section className="relative mb-10">
         <div>
           <Image
             src="/images/repair1.jpg"
@@ -49,61 +49,77 @@ const page = () => {
         </div>
       </section>
 
-      <section className="bg-white text-gray-600 text-center ">
-        <h1 className="uppercase text-3xl font-bold py-10">Como trabajamos</h1>
-        <div className="flex flex-col px-10 mb-5">
-          <div className="bg-gray-50 shadow-md flex flex-col items-center rounded-lg p-8">
-            <Image
-              src="/images/repair2.png"
-              width={100}
-              height={150}
-              alt="images"
-            />
-            <h1 className="text-2xl text-bold my-4">
-              Agendar una cita de trabajo.
-            </h1>
-            <p className="text-gray-500">
-              Solicite una cita en línea, o llámenos hoy para programar su
-              próxima visita.
-            </p>
+      <section className="bg-white text-gray-600 text-center mb-20">
+        <h1 className="uppercase text-3xl font-bold py-5">Como trabajamos</h1>
+        <div className="w-full flex overflow-x-scroll pt-10 mb-10">
+          <div className="pl-6 mb-4 relative">
+            <div className="w-72 h-full p-8 text-center bg-gray-50 flex flex-col items-center justify-between rounded-lg shadow-lg mr-10">
+              <Image
+                src="/images/repair2.png"
+                width={100}
+                height={150}
+                alt="images"
+                className="w-auto h-40"
+              />
+              <h1 className="text-2xl text-black text-bold my-4">
+                Agendar una cita de trabajo.
+              </h1>
+              <p className="text-gray-500">
+                Solicite una cita en línea, o llámenos hoy para programar su
+                próxima visita.
+              </p>
+            </div>
+            <div className="absolute -top-4 left-2 rounded-full w-16 py-4 bg-teal-400 text-white text-2xl font-extrabold">
+              1.
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col px-10 mb-5">
-          <div className="bg-gray-50 shadow-md flex flex-col items-center rounded-lg p-8">
-            <Image
-              src="/images/repair3.png"
-              width={100}
-              height={150}
-              alt="images"
-            />
-            <h1 className="text-2xl text-bold my-4">Nosotros venimos a ti</h1>
-            <p className="text-gray-500">
-              Uno de nuestros técnicos expertos se reunirá con usted en su casa
-              u oficina para reparar su computadora rápidamente.
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col px-10 mb-5">
-          <div className="bg-gray-50 shadow-md flex flex-col items-center rounded-lg p-8">
-            <Image
-              src="/images/repair4.png"
-              width={100}
-              height={150}
-              alt="images"
-            />
-            <h1 className="text-2xl text-bold my-4">
-              Fijado en el sitio o recogido{" "}
-            </h1>
-            <p className="text-gray-500">
-              Repararemos su computadora frente a usted o la recogeremos y se la
-              devolveremos cuando esté completa.
-            </p>
-          </div>
-        </div>
+          <div className="mb-4 relative">
+            <div className="w-72 h-full p-8 text-center bg-gray-50 flex flex-col items-center justify-between rounded-lg shadow-lg mr-10">
+              <Image
+                src="/images/repair3.png"
+                width={100}
+                height={150}
+                alt="images"
+                className="w-auto h-40"
+              />
+              <h1 className="text-2xl text-black text-bold my-4">
+                Nosotros venimos a ti
+              </h1>
+              <p className="text-gray-500">
+                Uno de nuestros técnicos expertos se reunirá con usted en su
+                casa u oficina para reparar su computadora rápidamente.
+              </p>
+            </div>
 
-        <div className="w-full flex justify-center pb-10">
+            <div className="absolute -top-4 -left-4 rounded-full w-16 py-4 bg-teal-400 text-white text-2xl font-extrabold">
+              2.
+            </div>
+          </div>
+          <div className="mb-4 relative">
+            <div className="w-72 h-full p-8 text-center bg-gray-50 flex flex-col items-center justify-between rounded-lg shadow-lg  mr-6">
+              <Image
+                src="/images/repair4.png"
+                width={100}
+                height={150}
+                alt="images"
+                className="w-auto h-40"
+              />
+              <h1 className="text-2xl text-black text-bold my-4">
+                Fijado en el sitio o recogido{" "}
+              </h1>
+              <p className="text-gray-500">
+                Repararemos su computadora frente a usted o la recogeremos y se
+                la devolveremos cuando esté completa.
+              </p>
+            </div>
+            <div className="absolute -top-4 -left-4 rounded-full w-16 py-4 bg-teal-400 text-white text-2xl font-extrabold">
+              3.
+            </div>
+          </div>
+        </div>
+        <div className="w-full flex justify-center">
           <h1 className="py-2 px-10 rounded bg-red-400 text-white ">
-            programar cita ahora
+            Programar cita ahora
           </h1>
         </div>
       </section>
@@ -115,93 +131,87 @@ const page = () => {
             Apple o PC, Empresarial o Residencial. <br /> Te tenemos cubierto.
           </p>
         </div>
-        <div className="w-full flex overflow-x-scroll mb-10">
-          <div className="pl-6">
-            <div className="w-72 text-center bg-white flex flex-col items-center rounded-br-3xl mr-4">
-              <Image
-                src="/images/repairservice1.jpg"
-                width={500}
-                height={500}
-                alt="images"
-              />
-              <div className="p-4">
-                <h1 className="text-lg text-bold mb-4">AJUSTES DEL SISTEMA</h1>
-                <p className="text-gray-500 text-sm mb-4">
-                  Malware, virus y ventanas emergentes <br />
-                  Sistemas lentos y lentos <br />
-                  Congelación o fallas en la computadora <br />
-                  Problemas de software <br />
-                  Reparaciones corruptas de Windows/iOS
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="">
-            <div className="w-72 text-center bg-white flex flex-col items-center rounded-br-3xl mr-4">
-              <Image
-                src="/images/repairservice2.png"
-                width={500}
-                height={500}
-                alt="images2"
-              />
-              <div className="p-4">
-                <h1 className="text-lg text-bold mb-4">
-                  REPARACIÓN DE HARDWARE
-                </h1>
-                <p className="text-gray-500 text-sm mb-4">
-                  Pantallas de portátiles rotas <br />
-                  Problemas de carga <br />
-                  Reemplazo del disco duro <br />
-                  Actualizaciones de memoria <br />
-                  Daños por líquidos y derrames de agua
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="">
-            <div className="w-72 text-center bg-white flex flex-col items-center rounded-br-3xl mr-4">
-              <Image
-                src="/images/repairservice3.png"
-                width={500}
-                height={500}
-                alt="images2"
-              />
-              <div className="p-4">
-                <h1 className="text-lg text-bold mb-4">REDES</h1>
-                <p className="text-gray-500 text-sm mb-4">
-                  Redes domésticas y comerciales <br />
-                  Configuraciones WIFI <br />
-                  Compartir archivos e impresoras <br />
-                  Configurar conmutador y enrutador <br />
-                  VPN/Escritorio remoto
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="">
-            <div className="w-72 text-center bg-white flex flex-col items-center rounded-br-3xl mr-4">
-              <Image
-                src="/images/repairservice4.png"
-                width={500}
-                height={500}
-                alt="images2"
-              />
-              <div className="p-4">
-                <h1 className="text-lg text-bold mb-4">
-                  RECUPERACIÓN DE DATOS{" "}
-                </h1>
-                <p className="text-gray-500 text-sm mb-4">
-                  Recuperación de datos del disco duro <br />
-                  Sistemas Windows o Apple <br />
-                  Discos duros fallidos <br />
-                  Particiones eliminadas <br />
-                  Archivos eliminados accidentalmente
-                </p>
-              </div>
+        <div className="mb-5">
+          <div className="w-full text-center bg-white flex flex-col items-center">
+            <Image
+              src="/images/repairservice1.jpg"
+              width={500}
+              height={500}
+              alt="images"
+            />
+            <div className="p-4">
+              <h1 className="text-lg text-bold mb-4">AJUSTES DEL SISTEMA</h1>
+              <p className="text-gray-500 mb-4">
+                Reparaciones corruptas de Windows/iOS <br />
+                Congelación o fallas en la computadora <br />
+                Malware, virus y ventanas emergentes <br />
+                Sistemas lentos y lentos <br />
+                Problemas de software
+              </p>
             </div>
           </div>
         </div>
-        <div className="w-full flex justify-center mb-10">
+        <div className="mb-5">
+          <div className="w-full text-center bg-white flex flex-col items-center">
+            <Image
+              src="/images/repairservice2.png"
+              width={500}
+              height={500}
+              alt="images2"
+            />
+            <div className="p-4">
+              <h1 className="text-lg text-bold mb-4">REPARACIÓN DE HARDWARE</h1>
+              <p className="text-gray-500 mb-4">
+                Pantallas de portátiles rotas <br />
+                Problemas de carga <br />
+                Reemplazo del disco duro <br />
+                Actualizaciones de memoria <br />
+                Daños por líquidos y derrames de agua
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="mb-5">
+          <div className="w-full text-center bg-white flex flex-col items-center">
+            <Image
+              src="/images/repairservice3.png"
+              width={500}
+              height={500}
+              alt="images2"
+            />
+            <div className="p-4">
+              <h1 className="text-lg text-bold mb-4">REDES</h1>
+              <p className="text-gray-500 mb-4">
+                Configuraciones WIFI <br />
+                VPN/Escritorio remoto <br />
+                Compartir archivos e impresoras <br />
+                Redes domésticas y comerciales <br />
+                Configurar conmutador y enrutador
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="mb-5">
+          <div className="w-full text-center bg-white flex flex-col items-center">
+            <Image
+              src="/images/repairservice4.png"
+              width={500}
+              height={500}
+              alt="images2"
+            />
+            <div className="p-4">
+              <h1 className="text-lg text-bold mb-4">RECUPERACIÓN DE DATOS </h1>
+              <p className="text-gray-500 mb-4">
+                Sistemas Windows o Apple <br />
+                Discos duros fallidos <br />
+                Particiones eliminadas <br />
+                Recuperación de datos del disco duro <br />
+                Archivos eliminados accidentalmente
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="w-full flex justify-center py-5">
           <h1 className="py-2 px-10 rounded bg-red-400 text-white ">
             Ver nuestros servicios
           </h1>
