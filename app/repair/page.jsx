@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Footer from "@/components/Footer";
 
 const page = () => {
   return (
@@ -20,16 +21,17 @@ const page = () => {
               <br />
               Computadora<span className="text-teal-300">s</span>
             </h1>
-            <p className="text-xl text-end px-6 mb-4">
+            <p className="text-xl px-6 mb-10">
               En tu casa, en tu oficina <br /> Nosotros vamos a ti
             </p>
-            <div className="w-full flex justify-end pr-6">
+            <div className="w-full flex justify-center">
               <h1 className="py-2 px-10 rounded bg-red-400 text-white ">
                 Reservar ahora
               </h1>
             </div>
           </div>
         </div>
+
         <div className="w-full absolute top-0">
           <div className="w-full bg-gray-900/10 text-white flex justify-between p-4">
             <div>Computer repair</div>
@@ -37,7 +39,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="w-full absolute bottom-0">
+        <div className="w-full absolute -bottom-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
             <path
               fill="#fff"
@@ -61,7 +63,7 @@ const page = () => {
                 alt="images"
                 className="w-auto h-40"
               />
-              <h1 className="text-2xl text-black text-bold my-4">
+              <h1 className="text-2xl text-black font-semibold my-4">
                 Agendar una cita de trabajo.
               </h1>
               <p className="text-gray-500">
@@ -82,7 +84,7 @@ const page = () => {
                 alt="images"
                 className="w-auto h-40"
               />
-              <h1 className="text-2xl text-black text-bold my-4">
+              <h1 className="text-2xl text-black font-semibold my-4">
                 Nosotros venimos a ti
               </h1>
               <p className="text-gray-500">
@@ -104,7 +106,7 @@ const page = () => {
                 alt="images"
                 className="w-auto h-40"
               />
-              <h1 className="text-2xl text-black text-bold my-4">
+              <h1 className="text-2xl text-black font-semibold my-4">
                 Fijado en el sitio o recogido{" "}
               </h1>
               <p className="text-gray-500">
@@ -126,7 +128,7 @@ const page = () => {
 
       <section className="bg-teal-500 py-10">
         <div className="w-full text-white text-center py-5">
-          <h1 className="text-3xl text-bold mb-4">NUESTROS SERVICIOS</h1>
+          <h1 className="text-3xl font-bold mb-4">NUESTROS SERVICIOS</h1>
           <p className="text-lg mb-4">
             Apple o PC, Empresarial o Residencial. <br /> Te tenemos cubierto.
           </p>
@@ -140,7 +142,9 @@ const page = () => {
               alt="images"
             />
             <div className="p-4">
-              <h1 className="text-lg text-bold mb-4">AJUSTES DEL SISTEMA</h1>
+              <h1 className="text-2xl text-black font-semibold mb-4">
+                AJUSTES DEL SISTEMA
+              </h1>
               <p className="text-gray-500 mb-4">
                 Reparaciones corruptas de Windows/iOS <br />
                 Congelación o fallas en la computadora <br />
@@ -160,7 +164,9 @@ const page = () => {
               alt="images2"
             />
             <div className="p-4">
-              <h1 className="text-lg text-bold mb-4">REPARACIÓN DE HARDWARE</h1>
+              <h1 className="text-2xl text-black font-semibold mb-4">
+                REPARACIÓN DE HARDWARE
+              </h1>
               <p className="text-gray-500 mb-4">
                 Pantallas de portátiles rotas <br />
                 Problemas de carga <br />
@@ -180,7 +186,7 @@ const page = () => {
               alt="images2"
             />
             <div className="p-4">
-              <h1 className="text-lg text-bold mb-4">REDES</h1>
+              <h1 className="text-2xl text-black font-semibold mb-4">REDES</h1>
               <p className="text-gray-500 mb-4">
                 Configuraciones WIFI <br />
                 VPN/Escritorio remoto <br />
@@ -200,7 +206,9 @@ const page = () => {
               alt="images2"
             />
             <div className="p-4">
-              <h1 className="text-lg text-bold mb-4">RECUPERACIÓN DE DATOS </h1>
+              <h1 className="text-2xl text-black font-semibold mb-4">
+                RECUPERACIÓN DE DATOS{" "}
+              </h1>
               <p className="text-gray-500 mb-4">
                 Sistemas Windows o Apple <br />
                 Discos duros fallidos <br />
@@ -218,9 +226,7 @@ const page = () => {
         </div>
       </section>
 
-      <section className="bg-white">
-        <div className="w-full h-[200px]">hola</div>
-      </section>
+      <Footer />
     </div>
   );
 };

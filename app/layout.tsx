@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import {
-  Inter,
-  Comfortaa,
+  Roboto_Condensed,
+  Roboto,
   Poppins,
   Raleway,
-  Roboto_Condensed,
+  Inter,
+  Comfortaa,
 } from "next/font/google";
 import "./globals.css";
 
 const inter = Roboto_Condensed({
-  weight: ["400", "700"],
+  weight: ["400", "500", "600", "700", "800"],
   style: ["normal"],
   subsets: ["latin"],
   display: "swap",
