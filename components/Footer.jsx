@@ -4,7 +4,13 @@ const Footer = () => {
   return (
     <div className="bg-[#3D3E43] text-white text-sm pt-10">
       <div className="px-5 text-center flex flex-col items-center mb-10">
-        <Image src="/images/footer1.png" width={100} height={100} />
+        <Image
+          src="/images/footer1.png"
+          width={100}
+          height={100}
+          alt="footer1"
+          className="h-20 w-auto"
+        />
         <h1 className="text-3xl font-bold pt-5">20+ AÑOS</h1>
         <h1 className="pb-2 text-lg">EXPERIENCIA COMBINADA</h1>
         <h1>
@@ -15,7 +21,13 @@ const Footer = () => {
       </div>
 
       <div className="px-5 text-center flex flex-col items-center mb-10">
-        <Image src="/images/footer2.png" width={100} height={100} />
+        <Image
+          src="/images/footer2.png"
+          width={100}
+          height={100}
+          alt="footer2"
+          className="h-20 w-auto"
+        />
         <h1 className="text-3xl font-bold pt-5">CLASIFICADO #1</h1>
         <h1 className="pb-2 text-lg">POR UNA RAZÓN</h1>
         <h1>
@@ -26,7 +38,13 @@ const Footer = () => {
       </div>
 
       <div className="px-5 text-center flex flex-col items-center mb-10">
-        <Image src="/images/footer3.png" width={100} height={100} />
+        <Image
+          src="/images/footer3.png"
+          width={100}
+          height={100}
+          alt="footer3"
+          className="h-20 w-auto"
+        />
         <h1 className="text-2xl font-bold pt-5">TODO EL TRABAJO</h1>
         <h1 className="pb-2 text-lg">100% GARANTIZADO</h1>
         <h1>
