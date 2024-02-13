@@ -2,8 +2,9 @@
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import { useState } from "react";
+import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
@@ -296,28 +297,28 @@ const page = () => {
                 navbar ? " h-16 " : " h-0 "
               } `}
             >
-              <h1>Home</h1>
+              <Link href="/">Home</Link>
             </div>
             <div
               className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-500 ${
                 navbar ? " h-16 " : " h-0 "
               } `}
             >
-              <h1>Repair</h1>
+              <Link href="/repair">Reparacion</Link>
             </div>
             <div
               className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-500 ${
                 navbar ? " h-16 " : " h-0 "
               } `}
             >
-              <h1>Tecnologia</h1>
+              <Link href="/">Tecnologia</Link>
             </div>
             <div
               className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-500 ${
                 navbar ? " h-16 " : " h-0 "
               } `}
             >
-              <h1>Clases</h1>
+              <Link href="/clases">Clases</Link>
             </div>
           </div>
         </div>
@@ -326,4 +327,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
