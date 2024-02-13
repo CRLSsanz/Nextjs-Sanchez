@@ -14,7 +14,7 @@ const page = () => {
             src="/images/repair1.jpg"
             width={1000}
             height={1500}
-            alt="images"
+            alt="repair1"
           />
         </div>
 
@@ -37,9 +37,16 @@ const page = () => {
         </div>
 
         <div className="w-full absolute top-0">
-          <div className="w-full bg-gray-900/10 text-white flex justify-between p-4">
-            <div>Computer repair</div>
-            <div>{"</>"}</div>
+          <div className="w-full bg-gray-900X/10 text-gray-300 flex justify-between p-4">
+            <div className="animate-bounce">
+              <Image
+                src="/images/logocrl.png"
+                width={50}
+                height={50}
+                alt="logo"
+              />
+            </div>
+            <div> </div>
           </div>
         </div>
 
@@ -283,7 +290,14 @@ const page = () => {
             : "opacity-0 pointer-events-none transform transition-all duration-1000 "
         }`}
         >
-          <div className="h-[250px] flex flex-col justify-evenly">
+          <div className="h-[350px] flex flex-col justify-evenly text-teal-400 font-semibold">
+            <div
+              className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-500 ${
+                navbar ? " h-16 " : " h-0 "
+              } `}
+            >
+              <h1>Home</h1>
+            </div>
             <div
               className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-500 ${
                 navbar ? " h-16 " : " h-0 "
@@ -293,17 +307,17 @@ const page = () => {
             </div>
             <div
               className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-500 ${
-                navbar ? " h-16 " : " h-1 "
-              } `}
-            >
-              <h1>Clases</h1>
-            </div>
-            <div
-              className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-500 ${
-                navbar ? " h-16 " : " h-1 "
+                navbar ? " h-16 " : " h-0 "
               } `}
             >
               <h1>Tecnologia</h1>
+            </div>
+            <div
+              className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-500 ${
+                navbar ? " h-16 " : " h-0 "
+              } `}
+            >
+              <h1>Clases</h1>
             </div>
           </div>
         </div>

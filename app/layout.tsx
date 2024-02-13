@@ -10,7 +10,7 @@ import {
 import "./globals.css";
 
 const inter = Roboto_Condensed({
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "700"],
   style: ["normal"],
   subsets: ["latin"],
   display: "swap",
