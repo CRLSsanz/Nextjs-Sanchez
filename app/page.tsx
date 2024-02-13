@@ -1,15 +1,9 @@
+import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
 export default function page() {
   return (
     <div className="bg-gray-100 text-gray-600">
-      <section className="w-full fixed bottom-0">
-        <div className="w-full h-16 bg-gray-900/85 text-teal-400 flex justify-between items-center px-4">
-          <div>A</div>
-          <div> = </div>
-        </div>
-      </section>
-
       <section className="mb-20 relative">
         <div>
           <Image
@@ -39,6 +33,8 @@ export default function page() {
           </div>
         </div>
       </section>
+
+      <Navbar />
     </div>
   );
 }

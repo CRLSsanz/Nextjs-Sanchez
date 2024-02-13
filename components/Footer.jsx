@@ -55,7 +55,7 @@ const Footer = () => {
         </h1>
       </div>
 
-      <div className="bg-[#333333] py-5 text-center text-gray-400">
+      <div className="bg-[#333333] py-12 text-center text-gray-400">
         © 2024 CRLSetup. All Rights Reserved.
       </div>
     </div>
