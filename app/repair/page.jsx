@@ -2,15 +2,12 @@
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { useState } from "react";
-import Link from "next/link";
+//import Link from "next/link";
 
 const Page = () => {
-  //const [navbar, setNavbar] = useState(false);
-
   return (
-    <div>
-      <section className="relative mb-10">
+    <div className="bg-gray-100">
+      <section className="relative mb-20">
         <div>
           <Image
             src="/images/repair1.jpg"
@@ -20,26 +17,8 @@ const Page = () => {
           />
         </div>
 
-        <div className="w-full h-full absolute top-0 bg-gray-900/40 px-6">
-          <div className="h-full py-10 text-gray-100 flex flex-col justify-center">
-            <h1 className="w-full px-6 uppercase text-4xl font-bold mb-4">
-              Repara<span className="text-teal-300">c</span>ion de
-              <br />
-              Computadora<span className="text-teal-300">s</span>
-            </h1>
-            <p className="text-xl px-6 mb-10">
-              En tu casa, en tu oficina <br /> Nosotros vamos a ti
-            </p>
-            <div className="w-full flex justify-center">
-              <h1 className="py-2 px-10 rounded bg-red-400 text-white ">
-                Reservar ahora
-              </h1>
-            </div>
-          </div>
-        </div>
-
-        <div className="w-full absolute top-0">
-          <div className="w-full bg-gray-900X/10 text-gray-300 flex justify-between p-4">
+        <div className="w-full h-full absolute top-0 bg-gray-900/40 px-4">
+          <div className="h-full pb-12 pt-4 text-gray-100 flex flex-col justify-between">
             <div className="animate-bounce">
               <Image
                 src="/images/logocrl.png"
@@ -48,14 +27,28 @@ const Page = () => {
                 alt="logo"
               />
             </div>
-            <div> </div>
+            <div>
+              <h1 className="w-full px-6 uppercase text-4xl font-bold mb-2">
+                Repara<span className="text-teal-300">c</span>ion de
+                <br />
+                Computadora<span className="text-teal-300">s</span>
+              </h1>
+              <p className="text-lg px-6">
+                En tu casa, en tu oficina <br /> Nosotros vamos a ti
+              </p>
+            </div>
+            <div className="w-full flex justify-center">
+              <h1 className="py-2 px-10 rounded bg-red-400 text-white ">
+                Reservar ahora
+              </h1>
+            </div>
           </div>
         </div>
 
         <div className="w-full absolute -bottom-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
             <path
-              fill="#fff"
+              fill="#f3f4f6"
               fillOpacity="1"
               //d="modificar el 150L480 por 100L480"
               d="M0,0L480,0L720,120L960,0L1200,0L1440,0L1440,150L1200,150L960,150L720,150L480,150L240,150L0,150Z"
@@ -64,11 +57,11 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="bg-white text-gray-600 text-center mb-20">
+      <section className="text-gray-600 text-center mb-20">
         <h1 className="uppercase text-3xl font-bold py-5">Como trabajamos</h1>
         <div className="w-full flex overflow-x-scroll pt-10 mb-10">
           <div className="pl-6 mb-4 relative">
-            <div className="w-72 h-full p-8 text-center bg-gray-50 flex flex-col items-center justify-between rounded-lg shadow-lg mr-10">
+            <div className="w-72 h-full p-8 text-center bg-white flex flex-col items-center justify-between rounded-lg shadow-lg mr-10">
               <Image
                 src="/images/repair2.png"
                 width={100}
@@ -89,7 +82,7 @@ const Page = () => {
             </div>
           </div>
           <div className="mb-4 relative">
-            <div className="w-72 h-full p-8 text-center bg-gray-50 flex flex-col items-center justify-between rounded-lg shadow-lg mr-10">
+            <div className="w-72 h-full p-8 text-center bg-white flex flex-col items-center justify-between rounded-lg shadow-lg mr-10">
               <Image
                 src="/images/repair3.png"
                 width={100}
@@ -111,7 +104,7 @@ const Page = () => {
             </div>
           </div>
           <div className="mb-4 relative">
-            <div className="w-72 h-full p-8 text-center bg-gray-50 flex flex-col items-center justify-between rounded-lg shadow-lg  mr-6">
+            <div className="w-72 h-full p-8 text-center bg-white flex flex-col items-center justify-between rounded-lg shadow-lg  mr-6">
               <Image
                 src="/images/repair4.png"
                 width={100}
@@ -139,14 +132,14 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="bg-teal-500 py-10">
+      <section className="bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 py-10">
         <div className="w-full text-white text-center py-5">
           <h1 className="text-3xl font-bold mb-4">NUESTROS SERVICIOS</h1>
           <p className="text-lg mb-4">
-            Apple o PC, Empresarial o Residencial. <br /> Te tenemos cubierto.
+            Laptop o PC, Empresarial o Residencial. <br /> Te tenemos cubierto.
           </p>
         </div>
-        <div className="mb-5">
+        <div className="pl-5 pb-5">
           <div className="w-full text-center bg-white flex flex-col items-center">
             <Image
               src="/images/repairservice1.jpg"
@@ -168,7 +161,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className="mb-5">
+        <div className="pr-5 pb-5">
           <div className="w-full text-center bg-white flex flex-col items-center">
             <Image
               src="/images/repairservice2.png"
@@ -190,7 +183,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className="mb-5">
+        <div className="pl-5 pb-5">
           <div className="w-full text-center bg-white flex flex-col items-center">
             <Image
               src="/images/repairservice3.png"
@@ -210,7 +203,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className="mb-5">
+        <div className="pr-5 pb-10">
           <div className="w-full text-center bg-white flex flex-col items-center">
             <Image
               src="/images/repairservice4.png"

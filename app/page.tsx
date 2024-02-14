@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Image from "next/image";
 
 export default function page() {
@@ -33,7 +34,7 @@ export default function page() {
           </div>
         </div>
       </section>
-
+      <Footer />
       <Navbar />
     </div>
   );

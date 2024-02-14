@@ -59,41 +59,55 @@ const Navbar = () => {
             : "opacity-0 pointer-events-none transform transition-all duration-1000 "
         }`}
       >
-        <div className="h-[350px] flex flex-col justify-evenly text-teal-400 font-semibold">
-          <div
-            className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-500 ${
-              navbar ? " h-16 " : " h-0 "
-            } `}
-            onClick={() => setNavbar(!navbar)}
-          >
-            <Link href="/">Home</Link>
+        <div className="h-auto text-white text-lg">
+          <div className="h-20 flex items-center mb-4">
+            <div
+              className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-300 ${
+                navbar ? " h-20 " : " h-0 "
+              } `}
+              onClick={() => setNavbar(!navbar)}
+            >
+              <Link href="/">Home</Link>
+            </div>
           </div>
 
-          <div
-            className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-500 ${
-              navbar ? " h-16 " : " h-0 "
-            } `}
-            onClick={() => setNavbar(!navbar)}
-          >
-            <Link href="/repair">Reparacion</Link>
+          <div className="h-20 flex items-center mb-4">
+            <div
+              className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-500 ${
+                navbar ? " h-20 " : " h-0 "
+              } `}
+              onClick={() => setNavbar(!navbar)}
+            >
+              <Link href="/repair" className="my-auto">
+                Reparacion
+              </Link>
+            </div>
           </div>
 
-          <div
-            className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-500 ${
-              navbar ? " h-16 " : " h-0 "
-            } `}
-            onClick={() => setNavbar(!navbar)}
-          >
-            <Link href="/tecnologia">Tecnologia</Link>
+          <div className="h-20 flex items-center mb-4">
+            <div
+              className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-700 ${
+                navbar ? " h-20 " : " h-0 "
+              } `}
+              onClick={() => setNavbar(!navbar)}
+            >
+              <Link href="/tecnologia" className="my-auto">
+                Tecnologia
+              </Link>
+            </div>
           </div>
 
-          <div
-            className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-500 ${
-              navbar ? " h-16 " : " h-0 "
-            } `}
-            onClick={() => setNavbar(!navbar)}
-          >
-            <Link href="/clases">Clases</Link>
+          <div className="h-20 flex items-center mb-4">
+            <div
+              className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-1000 ${
+                navbar ? " h-20 " : " h-0 "
+              } `}
+              onClick={() => setNavbar(!navbar)}
+            >
+              <Link href="/clases" className="my-auto">
+                Clases
+              </Link>
+            </div>
           </div>
         </div>
       </div>
