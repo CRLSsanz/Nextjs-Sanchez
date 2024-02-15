@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div>
       <nav
-        className={`w-10 fixed bottom-0 left-1/2 -ml-5 flex justify-center ${
+        className={`w-10 fixed bottom-5 right-5 left-1/2X -ml-5X flex justify-center ${
           navbar
             ? "bg-transparent z-50 transform transition-all duration-300 "
             : " bg-gray-900/90 "
@@ -52,7 +52,7 @@ const Navbar = () => {
       </nav>
 
       <div
-        className={`fixed top-0 z-0 flex flex-col justify-center text-center text-gray-200 bg-gray-900/70 w-full h-full
+        className={`fixed top-0 z-0 flex flex-col justify-center text-center text-gray-200 bg-gray-700/80 w-full h-full
         ${
           navbar
             ? " opacity-100 pointer-events-auto "
@@ -62,7 +62,7 @@ const Navbar = () => {
         <div className="h-auto text-white text-lg">
           <div className="h-20 flex items-center mb-4">
             <div
-              className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-300 ${
+              className={`bg-[#555] flex items-center justify-center w-full transform transition-all duration-300 ${
                 navbar ? " h-20 " : " h-0 "
               } `}
               onClick={() => setNavbar(!navbar)}
@@ -73,7 +73,7 @@ const Navbar = () => {
 
           <div className="h-20 flex items-center mb-4">
             <div
-              className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-500 ${
+              className={`bg-[#555] flex items-center justify-center w-full transform transition-all duration-500 ${
                 navbar ? " h-20 " : " h-0 "
               } `}
               onClick={() => setNavbar(!navbar)}
@@ -86,7 +86,7 @@ const Navbar = () => {
 
           <div className="h-20 flex items-center mb-4">
             <div
-              className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-700 ${
+              className={`bg-[#555] flex items-center justify-center w-full transform transition-all duration-700 ${
                 navbar ? " h-20 " : " h-0 "
               } `}
               onClick={() => setNavbar(!navbar)}
@@ -99,7 +99,7 @@ const Navbar = () => {
 
           <div className="h-20 flex items-center mb-4">
             <div
-              className={`bg-[#333] flex items-center justify-center w-full transform transition-all duration-1000 ${
+              className={`bg-[#555] flex items-center justify-center w-full transform transition-all duration-1000 ${
                 navbar ? " h-20 " : " h-0 "
               } `}
               onClick={() => setNavbar(!navbar)}

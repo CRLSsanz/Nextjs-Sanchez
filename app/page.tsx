@@ -8,7 +8,7 @@ export default function page() {
       <section className="mb-20 relative">
         <div>
           <Image
-            src="/images/fondo.jpg"
+            src="/images/home.jpg"
             width={1500}
             height={1500}
             alt="images"
