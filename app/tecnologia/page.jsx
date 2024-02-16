@@ -4,49 +4,44 @@ import Navbar from "@/components/Navbar";
 const Page = () => {
   return (
     <div>
-      <section className="relative">
-        <div>
-          <Image
-            src="/images/tecnologia1.jpg"
-            width={1000}
-            height={1500}
-            alt="repair1"
-          />
-        </div>
+      <section className="bg-cover bg-center bg-[url('/images/tecnologia1.jpg')] h-screen">
+        <div className="w-full h-full absolute top-0 bg-gray-900/50 px-6">
+          <div className="h-full pt-6 text-gray-100 flex flex-col justify-between">
+            <div className="text-gray-400 text-2xl font-bold tracking-wide">
+              Sanz<span className="text-green-500">.</span>
+            </div>
 
-        <div className="w-full h-full absolute top-0 bg-gray-900/40 px-4">
-          <div className="h-full pt-4 text-gray-100 flex flex-col justify-between">
-            <div className="text-gray-500 font-semibold">S A N Z .</div>
-            <div>
-              <h1 className="w-full px-6 uppercase text-4xl font-bold mb-2">
+            <div className="text-end">
+              <h1 className="w-full uppercase text-4xl font-bold mb-2">
                 Repotenci<span className="text-teal-300">a</span>r
                 <br />
                 tu eq<span className="text-teal-300">u</span>ipo
               </h1>
-              <p className="text-lg font-semibold px-6">
+              <p className="text-xl font-semibold mb-10">
                 Aumenta 10 veces
                 <br />
                 mas la velocidad <br />
                 de tu pc o laptop
               </p>
+
+              <div className="w-full flex flex-col items-center text-center text-xs">
+                <a
+                  href="#section2"
+                  className="w-full uppercase py-3 border border-white text-white font-semibold tracking-[0.3em] mb-5"
+                >
+                  Acelera tu pc
+                </a>
+
+                <a
+                  href="#section3"
+                  className="w-full uppercase py-3 border bg-white text-black font-semibold tracking-[0.3em]"
+                >
+                  Actualizar Tecnologia
+                </a>
+              </div>
             </div>
 
-            <div className="w-full flex flex-col items-center text-center text-xs">
-              <a
-                href="#section2"
-                className="w-60 uppercase py-3 border border-white text-white font-semibold tracking-[0.3em] mb-5"
-              >
-                Actualizar ahora
-              </a>
-
-              <a
-                href="#section3"
-                className="w-60 uppercase py-3 border bg-white text-black font-semibold tracking-[0.3em]"
-              >
-                Adquirir Tecnologia
-              </a>
-            </div>
-            <div className="flex justify-center h-10">
+            <div className="flex justify-center h-14">
               <div className="w-40 border-r-2 border-green-500 text-center">
                 <a href="#section1">
                   <div className="animate-bounce">
@@ -278,7 +273,155 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="p-20">PRODUCTOS</section>
+      {/** RAM */}
+      <section className="mb-6">
+        <h1 className="px-8 uppercase text-lg font-semibold tracking-widest mb-5">
+          Memoria RAM
+        </h1>
+        <div className="text-gray-500 grid grid-cols-3 gap-1 px-8 mb-4">
+          <span className=" w-40 font-semibold">Dimensiones:</span>
+          <h1 className="col-span-2"> 4GB 8GB 16GB 32GB</h1>
+          <span className="font-semibold">Transferencia:</span>
+          <h1 className="col-span-2">1333Mhz hasta 5200Mhz</h1>
+          <h1 className="font-semibold">Marca:</h1>
+          <h1 className="uppercase col-span-2">
+            Corsair Crucial Kingston Lexar Patriot WD
+          </h1>
+        </div>
+
+        <div className="w-full text-sm flex overflow-x-scroll mb-4">
+          <div className="pl-6">
+            <div className="h-full relative bg-white border rounded mr-4">
+              <div className="w-48 h-48 flex items-center mb-4">
+                <Image
+                  src="/images/ram-ddr5.png"
+                  width={500}
+                  height={500}
+                  alt="images"
+                />
+              </div>
+              <div className="absolute top-4 left-4 bg-green-500 text-white font-bold py-1.5 px-3 rounded-full text-sm">
+                12% OFF
+              </div>
+              <div className="text-center">
+                Memoria G.Skill Rgb <br /> DDR5
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="h-full bg-white rounded mr-4">
+              <div className="w-48 h-48 flex items-center border p-2 mb-4">
+                <Image
+                  src="/images/ram-ddr4.png"
+                  width={500}
+                  height={500}
+                  alt="images"
+                />
+              </div>
+
+              <div className="text-center">
+                Black Fury Hyper <br /> DDR4
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="h-full bg-white rounded mr-4">
+              <div className="w-48 h-48 flex items-center border mb-4">
+                <Image
+                  src="/images/ram-ddr3.png"
+                  width={500}
+                  height={500}
+                  alt="images"
+                />
+              </div>
+
+              <div className="text-center">
+                Memoria Kingston <br /> DDR3
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="h-full bg-white rounded mr-6">
+              <div className="w-48 h-48 flex items-center border mb-4">
+                <Image
+                  src="/images/ram-laptop.png"
+                  width={500}
+                  height={500}
+                  alt="images"
+                />
+              </div>
+
+              <div className="text-center">
+                Laptop SO-DIMM <br /> DDR4 SDRAM
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/** MONITOR */}
+      <section className="mb-6">
+        <h1 className="p-6 uppercase">Monitor HD</h1>
+        <div className="w-full flex overflow-x-scroll">
+          <div className="pl-6">
+            <div className="h-full bg-white rounded mr-4">
+              <div className="w-48 h-48 flex items-center border mb-4">
+                <Image
+                  src="/images/monitor-uw-curvo.png"
+                  width={500}
+                  height={500}
+                  alt="images"
+                />
+              </div>
+              <div className="text-center mb-2">
+                ACER Predator Z35P <br /> Nvidia G-Sync 21:9
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="h-full bg-white rounded mr-4">
+              <div className="w-48 h-48 flex items-center border mb-4">
+                <Image
+                  src="/images/monitor-uw.png"
+                  width={500}
+                  height={500}
+                  alt="images"
+                />
+              </div>
+              <div className="text-center mb-2">
+                ASUS ROG Swift PG-8Q <br /> G-Sync 21:9
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="h-full bg-white rounded mr-4">
+              <div className="w-48 h-48 flex items-center border mb-4">
+                <Image
+                  src="/images/monitor-hd.png"
+                  width={500}
+                  height={500}
+                  alt="images"
+                />
+              </div>
+              <div className="text-center mb-2">
+                Dell U2518D <br /> UltraSharp
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="text-gray-500 grid grid-cols-3 gap-1 px-8">
+          <span className=" w-40 font-semibold">Dimensiones:</span>
+          <h1 className="col-span-2">34" 29" 27" 25" 22"</h1>
+          <span className="font-semibold">Resolucion:</span>
+          <h1 className="col-span-2">FHD UHD 2K 4K</h1>
+          <h1 className="font-semibold">Marca:</h1>
+          <h1 className="uppercase col-span-2">ACER ASUS DELL HP LG SAMSUMG</h1>
+        </div>
+      </section>
 
       {/**
       <section className="bg-[url('/images/tecnologia-footer.jpg')] h-screen">      
