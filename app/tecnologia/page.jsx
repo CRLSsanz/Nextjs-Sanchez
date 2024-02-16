@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { useState } from "react";
 
 const getRam = [
@@ -26,13 +27,46 @@ const getRam = [
     price: "$ 40.99",
   },
 ];
+const getSSD = [
+  {
+    image: "ssd-nvme.jpg",
+    info: "Disco Ssd M2 Nvme 480gb Interno Crucial",
+    price: "$ 59.99",
+  },
+  {
+    image: "ssd-sata.jpg",
+    info: "Disco Solido Interno 240gb Ssd Sata Pc Notebook",
+    price: "$ 49.99",
+  },
+];
+const getVRam = [
+  {
+    image: "vram-rx.jpg",
+    info: "Placa De Video Rx 6800 Xt 16gb Alta Gama Diseño 3d",
+    price: "$ 1599.99",
+  },
+  {
+    image: "vram-gtx.jpg",
+    info: "Placa De Video Nvidia Msi Geforce Gtx 1050 Ti Oc 4gb",
+    price: "$ 640.99",
+  },
+];
 const getMonitor = [
   {
     image: "monitor-uw-curvo.png",
     info: "ACER Predator Z35P Nvidia G-Sync 21:9",
+    price: "$ 570.99",
   },
-  { image: "monitor-uw.png", info: "ASUS ROG Swift PG-8Q G-Sync 21:9" },
-  { image: "monitor-hd.png", info: "Dell U2518D UltraSharp" },
+  {
+    image: "monitor-uw.png",
+    info: "ASUS ROG Swift PG-8Q G-Sync 21:9",
+    price: "$ 360.99",
+  },
+  {
+    image: "monitor-hd.png",
+    info: "Dell U2518D UltraSharp",
+    price: "$ 140.99",
+  },
 ];
 
 const Page = () => {
@@ -48,14 +82,13 @@ const Page = () => {
             </div>
 
             <div className="text-end">
-              <h1 className="w-full uppercase text-4xl font-bold mb-2">
-                Repotenci<span className="text-teal-300">a</span>r
+              <h1 className="w-full uppercase text-5xl font-bold mb-2">
+                Repoten<span className="text-teal-300">c</span>ia
                 <br />
                 tu eq<span className="text-teal-300">u</span>ipo
               </h1>
               <p className="text-xl font-semibold mb-10">
-                Aumenta 10 veces
-                <br />
+                Aumenta 10 veces <br />
                 mas la velocidad <br />
                 de tu pc o laptop
               </p>
@@ -91,24 +124,13 @@ const Page = () => {
             </div>
           </div>
         </div>
-
-        <div className="hidden w-full absolute -bottom-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
-            <path
-              fill="#f3f4f6"
-              fillOpacity="1"
-              //d="modificar el 150L480 por 100L480"
-              d="M0,0L480,0L720,120L960,0L1200,0L1440,0L1440,150L1200,150L960,150L720,150L480,150L240,150L0,150Z"
-            ></path>
-          </svg>
-        </div>
       </section>
 
       <section
         className="bg-gradient-to-br from-green-500 to-green-600 text-black"
         id="section1"
       >
-        <div className="flex justify-center h-10 mb-10">
+        <div className="flex justify-center h-14 mb-10">
           <div className="w-40 border-r-2 border-white text-center"> </div>
         </div>
         <div className="flex flex-col items-center mb-10 pb-10">
@@ -153,13 +175,12 @@ const Page = () => {
       <section className="bg-white pb-10" id="section2">
         <div className="flex flex-col items-center p-10">
           <h1 className="uppercase text-sm font-bold text-green-500 tracking-[0.2em] mb-5">
-            Repotenciacion
+            Repotenciar
           </h1>
           <p className="text-2xl text-center font-bold mb-10 border-b border-gray-200 pb-5">
             Actualiza los componentes de tu laptop o computadora
           </p>
-
-          <div className="flex items-center text-green-600 mb-5">
+          <div className="flex items-center text-green-500 mb-5">
             <svg
               width="70px"
               height="70px"
@@ -186,8 +207,11 @@ const Page = () => {
             Solido 240GB SSD NVMe
           </h1>
           <p className="text-center px-5 text-gray-500 mb-10">
-            Asegura una compu con mucha velocidad, porque los SSD NVMe son mas
-            rapidos que los tradicionales
+            Asegura una computadora con mucha velocidad, porque los{" "}
+            <a href="#product" className="text-green-500">
+              SSD NVMe{" "}
+            </a>{" "}
+            son mas rapidos que los tradicionales
           </p>
 
           <div className="flex items-center text-green-600 mb-5">
@@ -273,7 +297,11 @@ const Page = () => {
           </h1>
           <p className="text-center px-5 text-gray-500">
             +1 slot libre para agregar otra memoria y tener la maxima ram
-            soportada 32GB o 64GB.
+            soportada de 32GB o 64GB.
+            <a href="#product" className="text-green-500">
+              {" "}
+              Ver productos{" "}
+            </a>
           </p>
         </div>
       </section>
@@ -300,54 +328,71 @@ const Page = () => {
           </div>
           <div>
             <Image
-              src="/images/tecnologia-footer.jpg"
+              src="/images/tecnologia2.jpg"
               width={1000}
               height={1500}
               alt="repair1"
             />
           </div>
+          <div>
+            <Image
+              src="/images/tecnologia3.jpg"
+              width={1000}
+              height={1500}
+              alt="tecnologia3"
+            />
+          </div>
+          <div>
+            <Image
+              src="/images/tecnologia4.jpg"
+              width={1000}
+              height={1500}
+              alt="tecnologi4"
+            />
+          </div>
         </div>
       </section>
 
+      {/** PRODUCT */}
       <section>
-        <h1 className="text-center uppercase text-sm font-bold text-green-500 tracking-[0.2em] mb-10">
+        <h1 className="text-center uppercase text-sm font-bold text-green-500 tracking-[0.2em]">
           Tecnologia
         </h1>
         {/** RAM */}
-        <div className="mb-10">
-          <div className="px-8 uppercase text-lg font-semibold tracking-widest flex flex-row justify-between items-center mb-5">
+        <div id="product" className="py-10">
+          <div className="px-8 uppercase text-lg font-semibold tracking-widest flex flex-row justify-between items-center mb-3">
             <h1>Memoria RAM</h1>
             <h1
               className="text-green-600 text-sm normal-case"
               onClick={() => setShowInfo(!showInfo)}
             >
               {" "}
-              {showInfo ? " menos " : " + info "}
+              {showInfo ? " ocultar " : " + info "}
             </h1>
           </div>
 
           <div
-            className={`text-gray-500 grid grid-cols-3 gap-1 px-8 mb-4 transform transition-all duration-500 ${
+            className={`text-gray-500 grid grid-cols-3 gap-1 px-8 mb-3 transform transition-all duration-500 ${
               showInfo ? " h-[140px] " : " h-0 text-white "
             } `}
           >
-            <span className=" w-40 font-semibold">Dimensiones:</span>
+            <span className="font-semibold">Capacidad:</span>
             <h1 className="col-span-2"> 4GB / 8GB / 16GB / 32GB</h1>
-            <span className="font-semibold">Transferencia:</span>
+            <span className="font-semibold">Velocidad:</span>
             <h1 className="col-span-2">
-              1333Mhz 1600Mhz 2400Mhz 3200Mhz 4800Mhz 5600Mhz
+              1333Mhz / 1600Mhz / 2400Mhz 3200Mhz / 4800Mhz / 5600Mhz
             </h1>
             <h1 className="font-semibold">Marca:</h1>
             <h1 className="uppercase col-span-2">
-              Corsair - Crucial - WD Kingston - Lexar - Patriot
+              Corsair / Crucial / WD Kingston / Lexar / Patriot
             </h1>
           </div>
 
-          <div className="w-full text-sm flex overflow-x-scroll mb-4 pr-6">
+          <div className="w-full text-sm flex overflow-x-scroll pb-5 pr-6">
             {getRam.map((item, index) => (
               <div key={index} className="pl-6">
                 <div className="h-full relative bg-white border shadow-lg rounded">
-                  <div className="w-48 h-48 flex items-center">
+                  <div className="w-52 h-44 flex items-center px-1">
                     <Image
                       src={`/images/${item.image}`}
                       width={500}
@@ -375,38 +420,40 @@ const Page = () => {
             ))}
           </div>
         </div>
-        {/** MONITOR */}
+
+        {/** SSD */}
         <div className="mb-10">
-          <div className="px-8 uppercase text-lg font-semibold tracking-widest flex flex-row justify-between items-center mb-5">
-            <h1>Monitores</h1>
+          <div className="px-8 uppercase text-lg font-semibold tracking-widest flex flex-row justify-between items-center mb-3">
+            <h1>Almacenamiento SSD</h1>
             <h1
               className="text-green-600 text-sm normal-case"
               onClick={() => setShowInfo(!showInfo)}
             >
               {" "}
-              {showInfo ? " menos " : " + info "}
+              {showInfo ? " ocultar " : " + info "}
             </h1>
           </div>
 
           <div
-            className={`text-gray-500 grid grid-cols-3 gap-1 px-8 mb-4 ${
-              showInfo ? " block " : " hidden "
+            className={`text-gray-500 grid grid-cols-3 gap-1 px-8 mb-3 transform transition-all duration-500 ${
+              showInfo ? " h-[140px] " : " h-0 text-white "
             } `}
           >
-            <span className=" w-40 font-semibold">Dimensiones:</span>
-            <h1 className="col-span-2">34" 29" 27" 25" 22"</h1>
-            <span className="font-semibold">Resolucion:</span>
-            <h1 className="col-span-2">FHD UHD 2K 4K</h1>
+            <span className="font-semibold">Capacidad:</span>
+            <h1 className="col-span-2"> 240GB / 480GB / 500GB / 1TB / 2TB</h1>
+            <span className="font-semibold">Velocidad:</span>
+            <h1 className="col-span-2">200Mb/s - 600Mb/s</h1>
             <h1 className="font-semibold">Marca:</h1>
             <h1 className="uppercase col-span-2">
-              ACER ASUS DELL HP LG SAMSUMG
+              Corsair / Crucial / WD Kingston / Lexar / Patriot
             </h1>
           </div>
-          <div className="w-full text-sm flex overflow-x-scroll mb-4 pr-6">
-            {getMonitor.map((item, index) => (
+
+          <div className="w-full text-sm flex overflow-x-scroll pb-5 pr-6">
+            {getSSD.map((item, index) => (
               <div key={index} className="pl-6">
-                <div className="h-full relative bg-white border shadow-md rounded">
-                  <div className="w-48 h-48 flex items-center mb-4">
+                <div className="h-full relative bg-white border shadow-lg rounded">
+                  <div className="w-52 h-44 flex items-center px-1">
                     <Image
                       src={`/images/${item.image}`}
                       width={500}
@@ -417,7 +464,140 @@ const Page = () => {
                   <div className="absolute top-4 left-4 bg-green-500 text-white font-bold py-1.5 px-3 rounded-full text-sm">
                     12% OFF
                   </div>
-                  <div className="px-5 text-center mb-4">{item.info}</div>
+                  <div className="h-12 px-5">{item.info}</div>
+                  <div className="px-5 flex flex-row justify-between mb-4">
+                    <h1 className="line-through text-gray-400">{item.price}</h1>
+                    <div>
+                      <Image
+                        src={`/images/estrella.png`}
+                        width={70}
+                        height={10}
+                        alt="images"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/** TARJETA DE VIDEO - VRAM */}
+        <div className="mb-10">
+          <div className="px-8 uppercase text-lg font-semibold tracking-widest flex flex-row justify-between items-center mb-3">
+            <h1>Tarjeta de Video</h1>
+            <h1
+              className="text-green-600 text-sm normal-case"
+              onClick={() => setShowInfo(!showInfo)}
+            >
+              {" "}
+              {showInfo ? " ocultar " : " + info "}
+            </h1>
+          </div>
+
+          <div
+            className={`text-gray-500 grid grid-cols-3 gap-1 px-8 mb-3 transform transition-all duration-500 ${
+              showInfo ? " h-[140px] " : " h-0 text-white "
+            } `}
+          >
+            <span className="font-semibold">Capacidad:</span>
+            <h1 className="col-span-2"> 2GB / 4GB / 8GB / 16GB</h1>
+            <span className="font-semibold">Velocidad:</span>
+            <h1 className="col-span-2">200Mb/s - 600Mb/s</h1>
+            <h1 className="font-semibold">Marca:</h1>
+            <h1 className="uppercase col-span-2">
+              N-Videa / RTX / Gigabyte / MSI / ASUS
+            </h1>
+          </div>
+
+          <div className="w-full text-sm flex overflow-x-scroll pb-5 pr-6">
+            {getVRam.map((item, index) => (
+              <div key={index} className="pl-6">
+                <div className="h-full relative bg-white border shadow-lg rounded">
+                  <div className="w-52 h-44 flex items-center px-1">
+                    <Image
+                      src={`/images/${item.image}`}
+                      width={500}
+                      height={500}
+                      alt="images"
+                    />
+                  </div>
+                  <div className="absolute top-4 left-4 bg-green-500 text-white font-bold py-1.5 px-3 rounded-full text-sm">
+                    12% OFF
+                  </div>
+                  <div className="h-12 px-5">{item.info}</div>
+                  <div className="px-5 flex flex-row justify-between mb-4">
+                    <h1 className="line-through text-gray-400">{item.price}</h1>
+                    <div>
+                      <Image
+                        src={`/images/estrella.png`}
+                        width={70}
+                        height={10}
+                        alt="images"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/** MONITORES */}
+        <div className="mb-10">
+          <div className="px-8 uppercase text-lg font-semibold tracking-widest flex flex-row justify-between items-center mb-3">
+            <h1>Monitores</h1>
+            <h1
+              className="text-green-600 text-sm normal-case"
+              onClick={() => setShowInfo(!showInfo)}
+            >
+              {" "}
+              {showInfo ? " ocultar " : " + info "}
+            </h1>
+          </div>
+
+          <div
+            className={`text-gray-500 grid grid-cols-3 gap-1 px-8 mb-3 transform transition-all duration-500 ${
+              showInfo ? " h-[140px] " : " h-0 text-white "
+            } `}
+          >
+            <span className="font-semibold">Dimensiones:</span>
+            <h1 className="col-span-2"> 34" / 29" / 27" / 25" / 22" </h1>
+            <span className="font-semibold">Resoluciòn:</span>
+            <h1 className="col-span-2"> 4K / 2k / UHD / QHD / HD </h1>
+            <h1 className="font-semibold">Marca:</h1>
+            <h1 className="uppercase col-span-2">
+              ACER / ASUS / DELL / HP / LG SAMSUMG
+            </h1>
+          </div>
+
+          <div className="w-full text-sm flex overflow-x-scroll pb-5 pr-6">
+            {getMonitor.map((item, index) => (
+              <div key={index} className="pl-6">
+                <div className="h-full relative bg-white border shadow-lg rounded">
+                  <div className="w-52 h-44 flex items-center px-1">
+                    <Image
+                      src={`/images/${item.image}`}
+                      width={500}
+                      height={500}
+                      alt="images"
+                    />
+                  </div>
+                  <div className="absolute top-4 left-4 bg-green-500 text-white font-bold py-1.5 px-3 rounded-full text-sm">
+                    12% OFF
+                  </div>
+                  <div className="h-12 px-5">{item.info}</div>
+                  <div className="px-5 flex flex-row justify-between mb-4">
+                    <h1 className="line-through text-gray-400">{item.price}</h1>
+                    <div>
+                      <Image
+                        src={`/images/estrella.png`}
+                        width={70}
+                        height={10}
+                        alt="images"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
@@ -425,24 +605,7 @@ const Page = () => {
         </div>
       </section>
 
-      {/**
-      <section className="bg-[url('/images/tecnologia-footer.jpg')] h-screen">      
-    */}
-      <section className="bg-cover bg-center bg-[url('/images/tecnologia-footer.jpg')] h-screen">
-        <div className="p-20 bg-black/90 h-full text-gray-500">
-          <div className="text-green-400 mb-5">HELLO WORD</div>
-          <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A dolor
-            officiis vero laboriosam autem amet voluptates fugiat expedita odio
-            voluptas!
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-gray-950 text-gray-500 py-20 text-center">
-        @ Copyright Sanz 2024 <br /> Site Template by{" "}
-        <span className="text-gray-200">Colorval</span>{" "}
-      </section>
+      <Footer />
 
       <Navbar />
     </div>
