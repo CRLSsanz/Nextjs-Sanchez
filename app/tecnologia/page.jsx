@@ -1,7 +1,43 @@
+"use client";
+
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import { useState } from "react";
+
+const getRam = [
+  {
+    image: "ram-ddr5.png",
+    info: "Memoria G.Skill Rgb DDR5",
+    price: "$ 140.99",
+  },
+  {
+    image: "ram-ddr4.png",
+    info: "Memoria Black Fury Hyper DDR4",
+    price: "$ 90.99",
+  },
+  {
+    image: "ram-ddr3.png",
+    info: "Memoria Kingston DDR3 4GB",
+    price: "$ 60.99",
+  },
+  {
+    image: "ram-laptop.png",
+    info: "RAM Laptop SO-DIMM DDR4 SDRAM",
+    price: "$ 40.99",
+  },
+];
+const getMonitor = [
+  {
+    image: "monitor-uw-curvo.png",
+    info: "ACER Predator Z35P Nvidia G-Sync 21:9",
+  },
+  { image: "monitor-uw.png", info: "ASUS ROG Swift PG-8Q G-Sync 21:9" },
+  { image: "monitor-hd.png", info: "Dell U2518D UltraSharp" },
+];
 
 const Page = () => {
+  const [showInfo, setShowInfo] = useState(false);
+
   return (
     <div>
       <section className="bg-cover bg-center bg-[url('/images/tecnologia1.jpg')] h-screen">
@@ -273,153 +309,119 @@ const Page = () => {
         </div>
       </section>
 
-      {/** RAM */}
-      <section className="mb-6">
-        <h1 className="px-8 uppercase text-lg font-semibold tracking-widest mb-5">
-          Memoria RAM
+      <section>
+        <h1 className="text-center uppercase text-sm font-bold text-green-500 tracking-[0.2em] mb-10">
+          Tecnologia
         </h1>
-        <div className="text-gray-500 grid grid-cols-3 gap-1 px-8 mb-4">
-          <span className=" w-40 font-semibold">Dimensiones:</span>
-          <h1 className="col-span-2"> 4GB 8GB 16GB 32GB</h1>
-          <span className="font-semibold">Transferencia:</span>
-          <h1 className="col-span-2">1333Mhz hasta 5200Mhz</h1>
-          <h1 className="font-semibold">Marca:</h1>
-          <h1 className="uppercase col-span-2">
-            Corsair Crucial Kingston Lexar Patriot WD
-          </h1>
-        </div>
-
-        <div className="w-full text-sm flex overflow-x-scroll mb-4">
-          <div className="pl-6">
-            <div className="h-full relative bg-white border rounded mr-4">
-              <div className="w-48 h-48 flex items-center mb-4">
-                <Image
-                  src="/images/ram-ddr5.png"
-                  width={500}
-                  height={500}
-                  alt="images"
-                />
-              </div>
-              <div className="absolute top-4 left-4 bg-green-500 text-white font-bold py-1.5 px-3 rounded-full text-sm">
-                12% OFF
-              </div>
-              <div className="text-center">
-                Memoria G.Skill Rgb <br /> DDR5
-              </div>
-            </div>
+        {/** RAM */}
+        <div className="mb-10">
+          <div className="px-8 uppercase text-lg font-semibold tracking-widest flex flex-row justify-between items-center mb-5">
+            <h1>Memoria RAM</h1>
+            <h1
+              className="text-green-600 text-sm normal-case"
+              onClick={() => setShowInfo(!showInfo)}
+            >
+              {" "}
+              {showInfo ? " menos " : " + info "}
+            </h1>
           </div>
 
-          <div>
-            <div className="h-full bg-white rounded mr-4">
-              <div className="w-48 h-48 flex items-center border p-2 mb-4">
-                <Image
-                  src="/images/ram-ddr4.png"
-                  width={500}
-                  height={500}
-                  alt="images"
-                />
-              </div>
-
-              <div className="text-center">
-                Black Fury Hyper <br /> DDR4
-              </div>
-            </div>
+          <div
+            className={`text-gray-500 grid grid-cols-3 gap-1 px-8 mb-4 transform transition-all duration-500 ${
+              showInfo ? " h-[140px] " : " h-0 text-white "
+            } `}
+          >
+            <span className=" w-40 font-semibold">Dimensiones:</span>
+            <h1 className="col-span-2"> 4GB / 8GB / 16GB / 32GB</h1>
+            <span className="font-semibold">Transferencia:</span>
+            <h1 className="col-span-2">
+              1333Mhz 1600Mhz 2400Mhz 3200Mhz 4800Mhz 5600Mhz
+            </h1>
+            <h1 className="font-semibold">Marca:</h1>
+            <h1 className="uppercase col-span-2">
+              Corsair - Crucial - WD Kingston - Lexar - Patriot
+            </h1>
           </div>
 
-          <div>
-            <div className="h-full bg-white rounded mr-4">
-              <div className="w-48 h-48 flex items-center border mb-4">
-                <Image
-                  src="/images/ram-ddr3.png"
-                  width={500}
-                  height={500}
-                  alt="images"
-                />
+          <div className="w-full text-sm flex overflow-x-scroll mb-4 pr-6">
+            {getRam.map((item, index) => (
+              <div key={index} className="pl-6">
+                <div className="h-full relative bg-white border shadow-lg rounded">
+                  <div className="w-48 h-48 flex items-center">
+                    <Image
+                      src={`/images/${item.image}`}
+                      width={500}
+                      height={500}
+                      alt="images"
+                    />
+                  </div>
+                  <div className="absolute top-4 left-4 bg-green-500 text-white font-bold py-1.5 px-3 rounded-full text-sm">
+                    12% OFF
+                  </div>
+                  <div className="h-12 px-5">{item.info}</div>
+                  <div className="px-5 flex flex-row justify-between mb-4">
+                    <h1 className="line-through text-gray-400">{item.price}</h1>
+                    <div>
+                      <Image
+                        src={`/images/estrella.png`}
+                        width={70}
+                        height={10}
+                        alt="images"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
-
-              <div className="text-center">
-                Memoria Kingston <br /> DDR3
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div className="h-full bg-white rounded mr-6">
-              <div className="w-48 h-48 flex items-center border mb-4">
-                <Image
-                  src="/images/ram-laptop.png"
-                  width={500}
-                  height={500}
-                  alt="images"
-                />
-              </div>
-
-              <div className="text-center">
-                Laptop SO-DIMM <br /> DDR4 SDRAM
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-      </section>
-      {/** MONITOR */}
-      <section className="mb-6">
-        <h1 className="p-6 uppercase">Monitor HD</h1>
-        <div className="w-full flex overflow-x-scroll">
-          <div className="pl-6">
-            <div className="h-full bg-white rounded mr-4">
-              <div className="w-48 h-48 flex items-center border mb-4">
-                <Image
-                  src="/images/monitor-uw-curvo.png"
-                  width={500}
-                  height={500}
-                  alt="images"
-                />
-              </div>
-              <div className="text-center mb-2">
-                ACER Predator Z35P <br /> Nvidia G-Sync 21:9
-              </div>
-            </div>
+        {/** MONITOR */}
+        <div className="mb-10">
+          <div className="px-8 uppercase text-lg font-semibold tracking-widest flex flex-row justify-between items-center mb-5">
+            <h1>Monitores</h1>
+            <h1
+              className="text-green-600 text-sm normal-case"
+              onClick={() => setShowInfo(!showInfo)}
+            >
+              {" "}
+              {showInfo ? " menos " : " + info "}
+            </h1>
           </div>
 
-          <div>
-            <div className="h-full bg-white rounded mr-4">
-              <div className="w-48 h-48 flex items-center border mb-4">
-                <Image
-                  src="/images/monitor-uw.png"
-                  width={500}
-                  height={500}
-                  alt="images"
-                />
-              </div>
-              <div className="text-center mb-2">
-                ASUS ROG Swift PG-8Q <br /> G-Sync 21:9
-              </div>
-            </div>
+          <div
+            className={`text-gray-500 grid grid-cols-3 gap-1 px-8 mb-4 ${
+              showInfo ? " block " : " hidden "
+            } `}
+          >
+            <span className=" w-40 font-semibold">Dimensiones:</span>
+            <h1 className="col-span-2">34" 29" 27" 25" 22"</h1>
+            <span className="font-semibold">Resolucion:</span>
+            <h1 className="col-span-2">FHD UHD 2K 4K</h1>
+            <h1 className="font-semibold">Marca:</h1>
+            <h1 className="uppercase col-span-2">
+              ACER ASUS DELL HP LG SAMSUMG
+            </h1>
           </div>
-
-          <div>
-            <div className="h-full bg-white rounded mr-4">
-              <div className="w-48 h-48 flex items-center border mb-4">
-                <Image
-                  src="/images/monitor-hd.png"
-                  width={500}
-                  height={500}
-                  alt="images"
-                />
+          <div className="w-full text-sm flex overflow-x-scroll mb-4 pr-6">
+            {getMonitor.map((item, index) => (
+              <div key={index} className="pl-6">
+                <div className="h-full relative bg-white border shadow-md rounded">
+                  <div className="w-48 h-48 flex items-center mb-4">
+                    <Image
+                      src={`/images/${item.image}`}
+                      width={500}
+                      height={500}
+                      alt="images"
+                    />
+                  </div>
+                  <div className="absolute top-4 left-4 bg-green-500 text-white font-bold py-1.5 px-3 rounded-full text-sm">
+                    12% OFF
+                  </div>
+                  <div className="px-5 text-center mb-4">{item.info}</div>
+                </div>
               </div>
-              <div className="text-center mb-2">
-                Dell U2518D <br /> UltraSharp
-              </div>
-            </div>
+            ))}
           </div>
-        </div>
-        <div className="text-gray-500 grid grid-cols-3 gap-1 px-8">
-          <span className=" w-40 font-semibold">Dimensiones:</span>
-          <h1 className="col-span-2">34" 29" 27" 25" 22"</h1>
-          <span className="font-semibold">Resolucion:</span>
-          <h1 className="col-span-2">FHD UHD 2K 4K</h1>
-          <h1 className="font-semibold">Marca:</h1>
-          <h1 className="uppercase col-span-2">ACER ASUS DELL HP LG SAMSUMG</h1>
         </div>
       </section>
 
@@ -437,7 +439,10 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="p-20">FOOTER</section>
+      <section className="bg-gray-950 text-gray-500 py-20 text-center">
+        @ Copyright Sanz 2024 <br /> Site Template by{" "}
+        <span className="text-gray-200">Colorval</span>{" "}
+      </section>
 
       <Navbar />
     </div>

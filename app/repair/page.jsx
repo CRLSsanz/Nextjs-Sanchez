@@ -11,8 +11,8 @@ const Page = () => {
         <div>
           <Image
             src="/images/repair1.jpg"
-            width={1000}
-            height={1500}
+            width={400}
+            height={600}
             alt="repair1"
           />
         </div>
