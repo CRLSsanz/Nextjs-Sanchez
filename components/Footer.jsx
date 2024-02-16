@@ -6,16 +6,16 @@ const Footer = () => {
       {/**
       <section className="bg-[url('/images/tecnologia-footer.jpg')] h-screen">      
     */}
-      <div className="bg-cover bg-center bg-[url('/images/tecnologia-footer.jpg')] h-screen">
+      <div className="bg-cover bg-center bg-[url('/images/tecnologia-footer.jpg')] h-auto">
         <div className="pt-20 px-10 bg-black/80 h-full">
-          <div className="text-green-400 text-2xl text-center font-bold tracking-wide mb-5">
+          <div className="text-green-500 text-2xl text-center font-bold tracking-wide mb-5">
             Sanz.
           </div>
           <p className="mb-10">
             Realmente nos preocupamos por la experiencia de nuestros clientes.
-            Con nuestros años de experiencia, su computadora está en buenas
-            manos. Atendiendo a más de 50 clientes al mes, nos esforzamos por
-            construir relaciones duraderas. La satisfacción del cliente
+            Con nuestros años de experiencia atendiendo a más de 50 clientes al
+            mes su computadora está en buenas manos. Nos esforzamos por
+            construir relaciones duraderas, la satisfacción del cliente
             significa mucho para nosotros. Respaldamos nuestro trabajo el 100%
             del tiempo.
           </p>

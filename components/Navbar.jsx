@@ -52,17 +52,17 @@ const Navbar = () => {
       </nav>
 
       <div
-        className={`fixed top-0 z-0 flex flex-col justify-center text-center text-gray-200 bg-gray-700/80 w-full h-full
+        className={`fixed top-0 z-0 flex flex-col justify-center text-center text-gray-200 bg-gray-700/80 w-full h-full 
         ${
           navbar
             ? " opacity-100 pointer-events-auto "
             : "opacity-0 pointer-events-none transform transition-all duration-1000 "
         }`}
       >
-        <div className="h-auto text-white text-lg">
+        <div className="h-auto text-white text-lg z-50 tracking-widest">
           <div className="h-20 flex items-center mb-4">
             <div
-              className={`bg-[#555] flex items-center justify-center w-full transform transition-all duration-300 ${
+              className={`bg-gray-700 flex items-center justify-center w-full transform transition-all duration-300 ${
                 navbar ? " h-20 " : " h-0 "
               } `}
               onClick={() => setNavbar(!navbar)}
@@ -73,7 +73,7 @@ const Navbar = () => {
 
           <div className="h-20 flex items-center mb-4">
             <div
-              className={`bg-[#555] flex items-center justify-center w-full transform transition-all duration-500 ${
+              className={`bg-gray-800 flex items-center justify-center w-full transform transition-all duration-500 ${
                 navbar ? " h-20 " : " h-0 "
               } `}
               onClick={() => setNavbar(!navbar)}
@@ -86,7 +86,7 @@ const Navbar = () => {
 
           <div className="h-20 flex items-center mb-4">
             <div
-              className={`bg-[#555] flex items-center justify-center w-full transform transition-all duration-700 ${
+              className={`bg-gray-900 flex items-center justify-center w-full transform transition-all duration-700 ${
                 navbar ? " h-20 " : " h-0 "
               } `}
               onClick={() => setNavbar(!navbar)}
@@ -99,7 +99,7 @@ const Navbar = () => {
 
           <div className="h-20 flex items-center mb-4">
             <div
-              className={`bg-[#555] flex items-center justify-center w-full transform transition-all duration-1000 ${
+              className={`bg-gray-950 flex items-center justify-center w-full transform transition-all duration-1000 ${
                 navbar ? " h-20 " : " h-0 "
               } `}
               onClick={() => setNavbar(!navbar)}

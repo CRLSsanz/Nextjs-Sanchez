@@ -6,58 +6,59 @@ import Navbar from "@/components/Navbar";
 
 const Page = () => {
   return (
-    <div className="bg-gray-100">
-      <section className="relative mb-20">
-        <div>
-          <Image
-            src="/images/repair1.jpg"
-            width={400}
-            height={600}
-            alt="repair1"
-          />
-        </div>
-
-        <div className="w-full h-full absolute top-0 bg-gray-900/40 px-4">
-          <div className="h-full pb-12 pt-4 text-gray-100 flex flex-col justify-between">
-            <div className="animate-bounce">
-              <Image
-                src="/images/logocrl.png"
-                width={50}
-                height={50}
-                alt="logo"
-              />
+    <div>
+      <section className="bg-cover bg-center bg-[url('/images/repair1.jpg')] h-screen hHH-[calc(85vh)]">
+        <div className="w-full h-full bg-gray-900/50">
+          <div className="relative h-full pt-6 text-gray-100 flex flex-col justify-between">
+            <div className="text-gray-300 text-2xl font-bold tracking-wide pl-4">
+              Sanz<span className="text-green-500">.</span>
             </div>
+
             <div>
-              <h1 className="w-full px-6 uppercase text-4xl font-bold mb-2">
-                Repara<span className="text-teal-300">c</span>ion de
+              <h1 className="w-full px-6 uppercase text-5xl font-bold mb-2 leading-tight">
+                Repara<span className="text-teal-300">c</span>iòn <br /> de
                 <br />
                 Computadora<span className="text-teal-300">s</span>
               </h1>
-              <p className="text-lg px-6">
-                En tu casa, en tu oficina <br /> Nosotros vamos a ti
+
+              <p className="text-center text-xl py-4 bg-gray-800/50 ">
+                En tu casa <br /> En tu oficina <br /> Donde te encuentres
               </p>
             </div>
-            <div className="w-full flex justify-center">
-              <h1 className="py-2 px-10 rounded bg-red-400 text-white ">
-                Reservar ahora
-              </h1>
-            </div>
-          </div>
-        </div>
 
-        <div className="w-full absolute -bottom-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
-            <path
-              fill="#f3f4f6"
-              fillOpacity="1"
-              //d="modificar el 150L480 por 100L480"
-              d="M0,0L480,0L720,120L960,0L1200,0L1440,0L1440,150L1200,150L960,150L720,150L480,150L240,150L0,150Z"
-            ></path>
-          </svg>
+            <div className="w-full flex flex-col items-center text-center text-xs px-10">
+              <a
+                href="#section2"
+                className="w-full uppercase py-3 border border-white text-white font-semibold tracking-[0.3em] mb-5"
+              >
+                Reservar ahora
+              </a>
+
+              <a
+                href="#section3"
+                className="w-full uppercase py-3 bg-gradient-to-br from-red-400 to-red-500 text-white font-semibold tracking-[0.3em]"
+              >
+                Nuestros servicios
+              </a>
+            </div>
+
+            <div className="h-10"> </div>
+          </div>
+
+          <div className="w-full absolute bottom-0 -mb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
+              <path
+                fill="#f3f4f6"
+                fillOpacity="1"
+                //d="modificar el 150L480 por 100L480"
+                d="M0,0L480,0L720,120L960,0L1200,0L1440,0L1440,150L1200,150L960,150L720,150L480,150L240,150L0,150Z"
+              ></path>
+            </svg>
+          </div>
         </div>
       </section>
 
-      <section className="text-gray-600 text-center mb-20">
+      <section className="bg-gray-100 text-gray-600 text-center pt-10 pb-20">
         <h1 className="uppercase text-3xl font-bold py-5">Como trabajamos</h1>
         <div className="w-full flex overflow-x-scroll pt-10 mb-10">
           <div className="pl-6 mb-4 relative">
@@ -126,7 +127,7 @@ const Page = () => {
           </div>
         </div>
         <div className="w-full flex justify-center">
-          <h1 className="py-2 px-10 rounded bg-red-400 text-white ">
+          <h1 className="py-2 px-10 bg-gradient-to-br from-red-400 to-red-500 text-white ">
             Programar cita ahora
           </h1>
         </div>
@@ -139,7 +140,7 @@ const Page = () => {
             Laptop o PC, Empresarial o Residencial. <br /> Te tenemos cubierto.
           </p>
         </div>
-        <div className="pl-5 pb-5">
+        <div id="section3" className="pl-5 pb-5">
           <div className="w-full text-center bg-white flex flex-col items-center">
             <Image
               src="/images/repairservice1.jpg"
@@ -225,9 +226,17 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex justify-center py-5">
-          <h1 className="py-2 px-10 rounded bg-red-400 text-white ">
-            Ver nuestros servicios
+        <div className="w-full text-white font-bold flex flex-col justify-center items-center py-5">
+          <h1 className="text-4xl tracking-[0.2em]">RECUERDA</h1>
+          <h1 className="border-b border-gray-200 tracking-widest">
+            DAR MANTENIMIENTO A TU
+          </h1>
+          <h1 className="text-5xl tracking-[0.1em]">PC-LAPTOP</h1>
+          <h1 className="text-xs mb-10 text-gray-100 tracking-wide">
+            EXTIENDE LA VIDA UTIL DE TUS EQUIPOS Y AHORRA!
+          </h1>
+          <h1 className="py-3 px-10 bg-gradient-to-br from-red-100 to-pink-100 text-black mb-10">
+            Programar cita ahora
           </h1>
         </div>
       </section>

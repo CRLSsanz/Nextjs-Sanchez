@@ -75,19 +75,19 @@ const Page = () => {
   return (
     <div>
       <section className="bg-cover bg-center bg-[url('/images/tecnologia1.jpg')] h-screen">
-        <div className="w-full h-full absolute top-0 bg-gray-900/50 px-6">
+        <div className="w-full h-full bg-gray-900/50 px-6">
           <div className="h-full pt-6 text-gray-100 flex flex-col justify-between">
             <div className="text-gray-400 text-2xl font-bold tracking-wide">
               Sanz<span className="text-green-500">.</span>
             </div>
 
             <div className="text-end">
-              <h1 className="w-full uppercase text-5xl font-bold mb-2">
+              <h1 className="w-full uppercase text-5xl font-bold mb-2 leading-tight">
                 Repoten<span className="text-teal-300">c</span>ia
                 <br />
                 tu eq<span className="text-teal-300">u</span>ipo
               </h1>
-              <p className="text-xl font-semibold mb-10">
+              <p className="text-xl font-semibold pr-5 mb-10">
                 Aumenta 10 veces <br />
                 mas la velocidad <br />
                 de tu pc o laptop
@@ -113,11 +113,9 @@ const Page = () => {
             <div className="flex justify-center h-14">
               <div className="w-40 border-r-2 border-green-500 text-center">
                 <a href="#section1">
-                  <div className="animate-bounce">
+                  <div className="animate-bounce text-xs">
                     <span className="text-green-500 mr-2"> v </span>
-                    <span className="-mt-5 text-xs tracking-[0.2em]">
-                      scroll down
-                    </span>
+                    <span className="-mt-5 tracking-[0.2em]">scroll down</span>
                   </div>
                 </a>
               </div>
@@ -134,7 +132,7 @@ const Page = () => {
           <div className="w-40 border-r-2 border-white text-center"> </div>
         </div>
         <div className="flex flex-col items-center mb-10 pb-10">
-          <h1 className="uppercase  font-semibold tracking-[0.2em]">Hello</h1>
+          <h1 className="uppercase font-semibold tracking-[0.2em]">Hello</h1>
           <div className="w-[220px] text-center text-white text-3xl font-semibold pb-3 border-b border-green-400 mb-5">
             We Are Sanz
           </div>
@@ -174,10 +172,10 @@ const Page = () => {
 
       <section className="bg-white pb-10" id="section2">
         <div className="flex flex-col items-center p-10">
-          <h1 className="uppercase text-sm font-bold text-green-500 tracking-[0.2em] mb-5">
+          <h1 className="uppercase font-bold text-green-500 tracking-[0.2em] mb-5">
             Repotenciar
           </h1>
-          <p className="text-2xl text-center font-bold mb-10 border-b border-gray-200 pb-5">
+          <p className="text-3xl text-center font-bold mb-10 border-b border-gray-200 pb-5">
             Actualiza los componentes de tu laptop o computadora
           </p>
           <div className="flex items-center text-green-500 mb-5">
@@ -307,11 +305,11 @@ const Page = () => {
       </section>
 
       <section id="section3">
-        <div className="h-[520px] bg-black text-white text-center flex flex-col items-center p-10 pt-20">
-          <h1 className="uppercase text-sm font-bold text-green-500 tracking-[0.2em] mb-2">
+        <div className="h-[540px] bg-black text-white text-center flex flex-col items-center p-10 pt-20">
+          <h1 className="uppercase font-bold text-green-500 tracking-[0.2em] mb-5">
             gaming
           </h1>
-          <h1 className="text-3xl mb-6">
+          <h1 className="text-3xl mb-8">
             Todos los accesorios y pc gamer para todas tus necesidades
           </h1>
           <div className="w-3/4 border-b border-gray-700"> </div>
@@ -354,7 +352,7 @@ const Page = () => {
       </section>
 
       {/** PRODUCT */}
-      <section>
+      <section className="pb-10">
         <h1 className="text-center uppercase text-sm font-bold text-green-500 tracking-[0.2em]">
           Tecnologia
         </h1>
@@ -440,12 +438,14 @@ const Page = () => {
             } `}
           >
             <span className="font-semibold">Capacidad:</span>
-            <h1 className="col-span-2"> 240GB / 480GB / 500GB / 1TB / 2TB</h1>
+            <h1 className="col-span-2">240GB / 480GB / 1TB / 2TB</h1>
             <span className="font-semibold">Velocidad:</span>
-            <h1 className="col-span-2">200Mb/s - 600Mb/s</h1>
+            <h1 className="col-span-2">
+              Desde 1600Mb/s - 2400Mb/s hasta 3500MB/s - 4000Mb/s
+            </h1>
             <h1 className="font-semibold">Marca:</h1>
             <h1 className="uppercase col-span-2">
-              Corsair / Crucial / WD Kingston / Lexar / Patriot
+              Corsair / Crucial / WD Blue Kingston / Lexar / Patriot
             </h1>
           </div>
 
@@ -496,18 +496,18 @@ const Page = () => {
           </div>
 
           <div
-            className={`text-gray-500 grid grid-cols-3 gap-1 px-8 mb-3 transform transition-all duration-500 ${
+            className={`text-gray-500 grid grid-cols-3 px-8 mb-3 transform transition-all duration-500 ${
               showInfo ? " h-[140px] " : " h-0 text-white "
             } `}
           >
-            <span className="font-semibold">Capacidad:</span>
+            <span className="font-semibold">Video Ram:</span>
             <h1 className="col-span-2"> 2GB / 4GB / 8GB / 16GB</h1>
             <span className="font-semibold">Velocidad:</span>
-            <h1 className="col-span-2">200Mb/s - 600Mb/s</h1>
+            <h1 className="col-span-2">12Ghz / 17Ghz / 18Ghz</h1>
+            <span className="font-semibold">Tipo:</span>
+            <h1 className="col-span-2">GDDR5 / GDDR6 128 bits</h1>
             <h1 className="font-semibold">Marca:</h1>
-            <h1 className="uppercase col-span-2">
-              N-Videa / RTX / Gigabyte / MSI / ASUS
-            </h1>
+            <h1 className="uppercase col-span-2">Asus / Gigabyte / MSI</h1>
           </div>
 
           <div className="w-full text-sm flex overflow-x-scroll pb-5 pr-6">
@@ -564,7 +564,9 @@ const Page = () => {
             <span className="font-semibold">Dimensiones:</span>
             <h1 className="col-span-2"> 34" / 29" / 27" / 25" / 22" </h1>
             <span className="font-semibold">Resoluciòn:</span>
-            <h1 className="col-span-2"> 4K / 2k / UHD / QHD / HD </h1>
+            <h1 className="col-span-2"> 4K / 2K / QHD / UHD - 16:9 / 21:9 </h1>
+            <span className="font-semibold">Refresh Rate:</span>
+            <h1 className="col-span-2"> 60Hz / 75Hz / 144Hz / 165Hz </h1>
             <h1 className="font-semibold">Marca:</h1>
             <h1 className="uppercase col-span-2">
               ACER / ASUS / DELL / HP / LG SAMSUMG
