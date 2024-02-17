@@ -10,24 +10,25 @@ const Page = () => {
       <section className="bg-cover bg-center bg-[url('/images/repair1.jpg')] h-screen hHH-[calc(85vh)]">
         <div className="w-full h-full bg-gray-900/50">
           <div className="relative h-full pt-6 text-gray-100 flex flex-col justify-between">
-            <div className="text-gray-300 text-2xl font-bold tracking-wide pl-4">
+            <div className="text-gray-300 text-2xl font-bold tracking-wide pl-6">
               Sanz<span className="text-red-400">.</span>
             </div>
 
             <div>
-              <h1 className="w-full px-6 uppercase text-5xl font-bold leading-tight mb-5">
-                Repara<span className="text-teal-300">c</span>iòn <br /> de PC y
+              <h1 className="w-full text-center px-6 uppercase text-5xl font-bold leading-tight mb-5">
+                Repara<span className="text-gray-300">c</span>iòn <br /> de PC y
                 <br />
-                Laptop<span className="text-teal-300">s</span>
+                Laptop<span className="text-gray-300">s</span>
               </h1>
 
-              <p className="text-center text-xl leading-loose py-4 bg-gray-800/50 ">
-                En tu casa <br /> En tu oficina. Vamos <br /> donde te
-                encuentres
-              </p>
+              <div className=" px-6">
+                <p className="w-full text-center text-xl leading-loose py-4 bg-gray-800/50 border-r-2 border-l-2 border-red-400">
+                  En tu domicilio <br /> En tu oficina. <br /> Vamos hacia ti
+                </p>
+              </div>
             </div>
 
-            <div className="w-full flex flex-col items-center text-center text-xs px-10">
+            <div className="w-full flex flex-col items-center text-center text-xs">
               <a
                 href="#section2"
                 className="hidden w-full uppercase py-3 border border-white text-white font-semibold tracking-[0.3em] mb-5"
@@ -37,7 +38,7 @@ const Page = () => {
 
               <a
                 href="#section3"
-                className="w-full uppercase py-3 bg-gradient-to-br from-red-400 to-red-500 text-white font-semibold tracking-[0.3em]"
+                className="uppercase py-3 px-10 bg-gradient-to-br from-red-400 to-red-500 text-white font-semibold tracking-[0.3em]"
               >
                 Nuestros servicios
               </a>
@@ -72,7 +73,7 @@ const Page = () => {
                 className="w-auto h-40"
               />
               <h1 className="text-2xl text-black font-semibold my-4">
-                Agendar una cita de trabajo.
+                Agendar una cita de trabajo
               </h1>
               <p className="text-gray-500">
                 Solicite una cita en línea, o llámenos hoy para programar su
@@ -93,7 +94,7 @@ const Page = () => {
                 className="w-auto h-40"
               />
               <h1 className="text-2xl text-black font-semibold my-4">
-                Nosotros venimos a ti
+                Nosotros vamos a ti
               </h1>
               <p className="text-gray-500">
                 Uno de nuestros técnicos expertos se reunirá con usted en su
@@ -115,7 +116,7 @@ const Page = () => {
                 className="w-auto h-40"
               />
               <h1 className="text-2xl text-black font-semibold my-4">
-                Fijado en el sitio o recogido{" "}
+                Fijado en el sitio o recogido
               </h1>
               <p className="text-gray-500">
                 Repararemos su computadora frente a usted o la recogeremos y se
@@ -151,7 +152,7 @@ const Page = () => {
             <h1 className="text-6xl font-bold tracking-widest">165+</h1>
             <p className="text-gray-200 text-4xl tracking-wider">Reviews</p>
           </div>
-          <div className="h-20 bg-teal-400/50 pt-4">Yelp - Google</div>
+          <div className="h-20 bg-red-500/50 pt-3">Yelp - Google</div>
 
           <div className="w-full absolute bottom-0 -mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
@@ -169,8 +170,9 @@ const Page = () => {
       <section className="text-gray-600 bg-gradient-to-b from-gray-100 to-gray-950 py-10">
         <div className="w-full text-center py-5">
           <h1 className="text-3xl font-bold mb-4">NUESTROS SERVICIOS</h1>
-          <p className="text-gray-400 text-lg mb-4">
-            Laptop o PC, Empresarial o Residencial. <br /> Te tenemos cubierto.
+          <p className="text-gray-500 text-lg mb-4">
+            Laptop o computadora de escritorio <br /> Empresarial o Residencial.
+            <br /> Te tenemos cubierto.
           </p>
         </div>
         <div className="mb-20">
