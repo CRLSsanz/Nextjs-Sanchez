@@ -137,12 +137,12 @@ const Page = () => {
             We Are Sanz
           </div>
           <p className="text-center text-gray-900 px-10 mb-10">
-            We have the highest trained technicians in Sacramento, and we
-            genuinely care about our customer's experience. With 20+ years of
-            combined experience, your computer is in good hands. Customer
-            satisfaction means the world to us, and we strive to make sure that
-            every customer is truly happy with the services that we perform. We
-            stand behind our work 100% of the time.
+            We have the highest trained technicians in Sanz, and we genuinely
+            care about our customer's experience. With 20+ years of combined
+            experience, your computer is in good hands. Customer satisfaction
+            means the world to us, and we strive to make sure that every
+            customer is truly happy with the services that we perform. We stand
+            behind our work 100% of the time.
           </p>
           <div className="flex flex-wrap items-center text-center">
             <div className="basis-1/2">
@@ -343,6 +343,14 @@ const Page = () => {
           <div>
             <Image
               src="/images/tecnologia4.jpg"
+              width={1000}
+              height={1500}
+              alt="tecnologi4"
+            />
+          </div>
+          <div>
+            <Image
+              src="/images/tecnologia5.jpg"
               width={1000}
               height={1500}
               alt="tecnologi4"
