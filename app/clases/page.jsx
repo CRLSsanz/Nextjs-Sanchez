@@ -8,19 +8,129 @@ const Page = () => {
       <section className="h-screen flex flex-col justify-between bg-gray-100">
         <div className="h-full text-gray-200">
           <div className="bg-gray-950 text-center py-4">
-            <div>
-              ICO
-              <span>+51.990.441.430</span>
+            <div className="flex justify-center items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-5 h-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                />
+              </svg>
+              <span className="ml-2">+51.990.441.430</span>
             </div>
-            <div>
-              ICO
-              <span>ventas@sanz-tech.com</span>
+            <div className="flex justify-center items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-5 h-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                />
+              </svg>
+              <span className="ml-2">ventas@sanz-tech.com</span>
             </div>
-            <div>
-              ICO
-              <span>Horario Oficina: L-V de 08 AM - 06 PM</span>
+            <div className="flex justify-center items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-5 h-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+              <span className="ml-2">
+                Horario Oficina: L-V de 08 AM - 06 PM
+              </span>
             </div>
-            <div>Redes sociales</div>
+
+            {/** SVG - REDES SOCIALES */}
+            <div className="flex flex-wrap justify-center text-gray-300 py-1">
+              <div className="bg-transparent border border-gray-300 rounded-full w-6 h-6 flex mr-2">
+                <svg
+                  className="m-auto"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path
+                      fillRule="nonzero"
+                      d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div className="bg-transparent border border-gray-300 rounded-full w-6 h-6 flex mr-2">
+                <svg
+                  className="m-auto"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth="0"
+                  viewBox="0 0 24 24"
+                  height="1.2em"
+                  width="1.2em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10z"></path>
+                  </g>
+                </svg>
+              </div>
+              <div className="bg-transparent border border-gray-300 rounded-full w-6 h-6 flex mr-2">
+                <svg
+                  className="m-auto"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path d="M28,6.937c-0.957,0.425 -1.985,0.711 -3.064,0.84c1.102,-0.66 1.947,-1.705 2.345,-2.951c-1.03,0.611 -2.172,1.055 -3.388,1.295c-0.973,-1.037 -2.359,-1.685 -3.893,-1.685c-2.946,0 -5.334,2.389 -5.334,5.334c0,0.418 0.048,0.826 0.138,1.215c-4.433,-0.222 -8.363,-2.346 -10.995,-5.574c-0.458,0.788 -0.721,1.704 -0.721,2.683c0,1.85 0.941,3.483 2.372,4.439c-0.874,-0.028 -1.697,-0.268 -2.416,-0.667c0,0.023 0,0.044 0,0.067c0,2.585 1.838,4.741 4.279,5.23c-0.447,0.122 -0.919,0.187 -1.406,0.187c-0.343,0 -0.678,-0.034 -1.003,-0.095c0.679,2.119 2.649,3.662 4.983,3.705c-1.825,1.431 -4.125,2.284 -6.625,2.284c-0.43,0 -0.855,-0.025 -1.273,-0.075c2.361,1.513 5.164,2.396 8.177,2.396c9.812,0 15.176,-8.128 15.176,-15.177c0,-0.231 -0.005,-0.461 -0.015,-0.69c1.043,-0.753 1.948,-1.692 2.663,-2.761z"></path>
+                  </g>
+                </svg>
+              </div>
+              {/** prueba */}
+              <div className="bg-transparent border border-gray-300 rounded-full w-6 h-6 flex mr-0">
+                <svg
+                  className="m-auto"
+                  fill="currentColor"
+                  viewBox="-337 273 123.5 256"
+                  height="1rem"
+                  width="1rem"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M-260.9,327.8c0-10.3,9.2-14,19.5-14c10.3,0,21.3,3.2,21.3,3.2l6.6-39.2c0,0-14-4.8-47.4-4.8c-20.5,0-32.4,7.8-41.1,19.3 c-8.2,10.9-8.5,28.4-8.5,39.7v25.7H-337V396h26.5v133h49.6V396h39.3l2.9-38.3h-42.2V327.8z" />
+                </svg>
+              </div>
+            </div>
           </div>
 
           <div className="sticky top-0 bg-white h-20 flex flex-row justify-between items-center px-5">
@@ -58,59 +168,199 @@ const Page = () => {
           <div className="bg-gradient-to-br from-cyan-400 to-blue-500  p-4 text-white rounded-lg">
             <h1 className="text-xl font-bold py-2">Valores Agregados</h1>
             <div className="py-3 border-b border-blue-300 flex flex-row justify-between">
-              <div> ICO Manual Digital </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-5 h-5 inline-block mr-2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+                  />
+                </svg>
+                Manual Digital
+              </div>
               <h1 className="font-bold">Sì</h1>
             </div>
             <div className="py-3 border-b border-blue-300 flex flex-row justify-between">
-              <div> ICO Horario </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-5 h-5 inline-block mr-2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125"
+                  />
+                </svg>
+                Horario
+              </div>
               <h1 className="font-bold">Personalizado</h1>
             </div>
             <div className="py-3 border-b border-blue-300 flex flex-row justify-between">
-              <div> ICO Duracion </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-5 h-5 inline-block mr-2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                Duracion{" "}
+              </div>
               <h1 className="font-bold">7 a 20 Horas</h1>
             </div>
             <div className="py-3 border-b border-blue-300 flex flex-row justify-between">
-              <div> ICO Diploma</div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-5 h-5 inline-block mr-2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
+                  />
+                </svg>
+                Diploma
+              </div>
               <h1 className="font-bold">Sì</h1>
             </div>
             <div className="py-3 border-b border-blue-300 flex flex-row justify-between">
-              <div> ICO Aprendizaje Garantizado</div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-5 h-5 inline-block mr-2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+                  />
+                </svg>
+                Aprendizaje Garantizado
+              </div>
               <h1 className="font-bold">Sì</h1>
             </div>
             <div className="py-3 border-b border-blue-300 flex flex-row justify-between">
-              <div> ICO Clases en vivo</div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-5 h-5 inline-block mr-2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+                  />
+                </svg>
+                Clases en vivo
+              </div>
               <h1 className="font-bold">Sì</h1>
             </div>
             <div className="pt-3 flex flex-row justify-between">
-              <div> ICO Interacciòn con Instructor</div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-5 h-5 inline-block mr-2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                Interacciòn con Instructor
+              </div>
               <h1 className="font-bold">Sì</h1>
             </div>
           </div>
 
           <div className="text-gray-800 my-5">
-            <div className="flex flex-row mb-5">
-              <div className="w-16">IMA</div>
+            <div className="flex flex-row items-center mb-5">
+              <div className="w-16 mr-3">
+                <Image
+                  src={"/images/clases-instructor.png"}
+                  width={60}
+                  height={60}
+                  alt="Instructor"
+                />
+              </div>
               <div>
                 <h1 className="font-semibold">INSTRUCTOR</h1>
                 <h1 className="text-gray-500">Instructor Certificado</h1>
               </div>
             </div>
-            <div className="flex flex-row mt-5">
-              <div className="w-16">IMA</div>
+            <div className="flex flex-row items-center mt-5">
+              <div className="w-16 mr-3">
+                <Image
+                  src={"/images/clases-online.png"}
+                  width={60}
+                  height={60}
+                  alt="Online"
+                />
+              </div>
               <div>
                 <h1 className="font-semibold">MODALIDAD</h1>
                 <h1 className="text-gray-500">Online, en vivo y presencial</h1>
               </div>
             </div>
-            <div className="flex flex-row mt-5">
-              <div className="w-16">IMA</div>
+            <div className="flex flex-row items-center mt-5">
+              <div className="w-16 mr-3">
+                <Image
+                  src={"/images/clases-participantes.png"}
+                  width={60}
+                  height={60}
+                  alt="Participantes"
+                />
+              </div>
               <div>
                 <h1 className="font-semibold">ESTUDIANTES</h1>
                 <h1 className="text-gray-500">+500 Estudiantes felices</h1>
               </div>
             </div>
-            <div className="flex flex-row mt-5">
-              <div className="w-16">IMA</div>
+            <div className="flex flex-row items-center mt-5">
+              <div className="w-16 mr-3">
+                <Image
+                  src={"/images/clases-duracion.png"}
+                  width={60}
+                  height={60}
+                  alt="Duracion"
+                />
+              </div>
               <div>
                 <h1 className="font-semibold">DURACION POR NIVEL</h1>
                 <h1 className="text-gray-500">07/20 Horas</h1>
@@ -118,15 +368,13 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="my-5">
-            <div className="text-xl text-white bg-blue-600 px-4 py-1 rounded-full">
-              Temario
-            </div>
-            <div>Lista</div>
-            <div>Lista</div>
-            <div>Lista</div>
-            <div>Lista</div>
-            <div>Lista</div>
+          <div className="flex justify-end mb-10">
+            <a
+              href="/"
+              className=" text-white text-center bg-blue-600 px-10 py-2 rounded-full"
+            >
+              Ver temario
+            </a>
           </div>
 
           <div className="text-gray-700">
