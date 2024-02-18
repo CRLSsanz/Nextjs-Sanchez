@@ -134,7 +134,11 @@ const Page = () => {
           </div>
 
           <div className="sticky top-0 bg-white h-20 flex flex-row justify-between items-center px-5">
-            <div> LOGO</div>
+            <h1 className="text-gray-700 text-sm font-bold tracking-[0.1em]">
+              <span className="text-4xl font-bold">S</span>
+              <span className="text-2xl">ANZ</span> Technology
+            </h1>
+
             <div className="p-2 bg-gray-900">MENU</div>
           </div>
 
@@ -163,8 +167,8 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="bg-gray-100 px-4">
-        <div className="bg-white p-4">
+      <section className="bg-gray-100  px-4 pb-10">
+        <div className="bg-white rounded-b-xl p-4">
           <div className="bg-gradient-to-br from-cyan-400 to-blue-500  p-4 text-white rounded-lg">
             <h1 className="text-xl font-bold py-2">Valores Agregados</h1>
             <div className="py-3 border-b border-blue-300 flex flex-row justify-between">
@@ -368,9 +372,9 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="flex justify-end mb-10">
+          <div className="flex justify-center mb-10">
             <a
-              href="/"
+              href="#cursos"
               className=" text-white text-center bg-blue-600 px-10 py-2 rounded-full"
             >
               Ver temario
@@ -397,36 +401,193 @@ const Page = () => {
             </p>
           </div>
 
-          <div className="mt-10">
+          <div id="cursos" className="mt-10">
             <h1 className="text-center font-semibold text-3xl mb-5">Cursos</h1>
-            <div className="mb-5">
+            <div className="hidden mb-5">
               <div className=" text-white bg-blue-600 px-4 py-3 rounded-full">
                 Cursos de Microsoft Office
               </div>
             </div>
 
-            <div className="mb-5">
-              <div className=" text-white bg-blue-600 px-4 py-3 rounded-full">
-                Cursos de Hardware y Software
+            <div
+              id="accordion-color"
+              data-accordion="collapse"
+              data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white"
+              className="mb-5"
+            >
+              <h2 id="accordion-color-heading-1">
+                <button
+                  type="button"
+                  className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+                  data-accordion-target="#accordion-color-body-1"
+                  aria-expanded="true"
+                  aria-controls="accordion-color-body-1"
+                >
+                  <span>Cursos de Microsoft Office</span>
+                  <svg
+                    data-accordion-icon
+                    className="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-color-body-1"
+                className="hidden"
+                aria-labelledby="accordion-color-heading-1"
+              >
+                <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                  <p className="mb-2 text-gray-500 dark:text-gray-400">
+                    Microsoft Word <br />
+                    Microsoft Excel <br />
+                    Microsoft PowerPoint <br />
+                    Microsoft Access
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className="mb-5">
-              <div className=" text-white bg-blue-600 px-4 py-3 rounded-full">
-                Cursos de Diseno grafico
+              <h2 id="accordion-color-heading-2">
+                <button
+                  type="button"
+                  className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+                  data-accordion-target="#accordion-color-body-2"
+                  aria-expanded="false"
+                  aria-controls="accordion-color-body-2"
+                >
+                  <span>Cursos de Hardware y Software</span>
+                  <svg
+                    data-accordion-icon
+                    className="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-color-body-2"
+                className="hidden"
+                aria-labelledby="accordion-color-heading-2"
+              >
+                <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                  <p className="mb-2 text-gray-500 dark:text-gray-400">
+                    Partes de la computadora <br />
+                    Perifericos <br />
+                    Aplicaciones <br />
+                    Sistema Operativo <br />
+                    Manejo de Windows 11 <br />
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className="mb-5">
-              <div className=" text-white bg-blue-600 px-4 py-3 rounded-full">
-                Cursos de Programacion Junior
+              <h2 id="accordion-color-heading-3">
+                <button
+                  type="button"
+                  className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+                  data-accordion-target="#accordion-color-body-3"
+                  aria-expanded="true"
+                  aria-controls="accordion-color-body-3"
+                >
+                  <span>Cursos de Diseno Grafico</span>
+                  <svg
+                    data-accordion-icon
+                    className="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-color-body-3"
+                className="hidden"
+                aria-labelledby="accordion-color-heading-3"
+              >
+                <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                  <p className="mb-2 text-gray-500 dark:text-gray-400">
+                    Photoshop <br />
+                    CorelDraw <br />
+                    Adobe Premier <br />
+                  </p>
+                </div>
+              </div>
+
+              <h2 id="accordion-color-heading-4">
+                <button
+                  type="button"
+                  className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+                  data-accordion-target="#accordion-color-body-4"
+                  aria-expanded="true"
+                  aria-controls="accordion-color-body-4"
+                >
+                  <span>Cursos de Programacion Junior</span>
+                  <svg
+                    data-accordion-icon
+                    className="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-color-body-4"
+                className="hidden"
+                aria-labelledby="accordion-color-heading-4"
+              >
+                <div className="rounded-b-xl p-5 border border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                  <p className="mb-2 text-gray-500 dark:text-gray-400">
+                    Principios basicos <br />
+                    Algoritmos <br />
+                    Programando con Scract <br />
+                    Diseno web HTML
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="my-10 px-5 text-gray-600 ">
+      <section className="p-10 text-gray-600 ">
         <h1 className="text-3xl font-semibold mb-5 text-gray-800">
           Modalidades
         </h1>
@@ -473,7 +634,7 @@ const Page = () => {
 
       {/** FOOTER */}
       <section className="bg-gray-900 text-gray-300 pt-20">
-        <div className="px-5 mb-10">
+        <div className="px-10 mb-10">
           <h1 className="text-white font-bold tracking-[0.1em] mb-4">
             <span className="text-4xl font-bold">S</span>
             <span className="text-3xl">ANZ</span> Technology
@@ -501,7 +662,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="mb-20 px-5">
+        <div className="mb-20 px-10">
           <h1 className="text-white text-xl font-semibold mb-4">Blog</h1>
           <p className="mb-4">
             Visita nuestro blog y mantente actualizado en el mundo de Tecnología
