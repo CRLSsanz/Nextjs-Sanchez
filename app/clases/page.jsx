@@ -44,7 +44,7 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="hidden bg-gray-100  px-4 pb-10">
+      <section className=" bg-gray-100  px-4 pb-10">
         <div className="bg-white rounded-b-xl p-4">
           <div className="bg-gradient-to-br from-cyan-400 to-blue-500  p-4 text-white rounded-lg">
             <h1 className="text-xl font-bold py-2">Valores Agregados</h1>
@@ -257,27 +257,7 @@ const Page = () => {
               Ver temario
             </a>
           </div>
-
-          <div className="text-gray-700">
-            <h1 className="text-2xl text-blue-600 mb-5">
-              ¿Estudias o trabajas y quieres aprender una herramienta de
-              Microsoft Office?
-            </h1>
-            <h1 className="text-xl font-semibold">
-              Cursos de Microsoft Office
-            </h1>
-            <p className="text-justify">
-              En Sanz Technology ofrecemos cursos de Microsoft Office para que
-              conozcas y manejes esta paquetería básica de Microsoft (Word,
-              Excel, PowerPoint, Outlook, Curso de Project, Access, etc.),
-              además de cursos en plataformas de alto nivel para servidores
-              (Windows Server, SQL, Oracle, etc.). Te garantizamos la mayor
-              calidad en capacitación pues contamos con personal certificado,
-              además de avalar su capacidad para impartir el curso. Ofrecemos
-              además el curso para obtener la certificación Office.
-            </p>
-          </div>
-
+          {/**
           <div id="cursos" className="mt-10">
             <h1 className="text-center font-semibold text-3xl mb-5">Cursos</h1>
             <div className="hidden mb-5">
@@ -461,6 +441,7 @@ const Page = () => {
               </div>
             </div>
           </div>
+ */}
         </div>
       </section>
 
@@ -532,6 +513,7 @@ const Page = () => {
         </div>
       </section>
 
+      {/** MODALIDADES */}
       <section className="p-5 text-gray-600 ">
         <h1 className="text-3xl font-semibold mb-5 text-gray-800">
           Modalidades
@@ -555,15 +537,11 @@ const Page = () => {
         </p>
       </section>
 
+      {/** ACORDEON */}
       <section>
-        <div className="p-10">
+        <div className="p-5 mb-10">
           <div id="cursos" className="mt-10">
             <h1 className="text-center font-semibold text-3xl mb-5">Cursos</h1>
-            <div className="hidden mb-5">
-              <div className=" text-white bg-blue-600 px-4 py-3 rounded-full">
-                Cursos de Microsoft Office
-              </div>
-            </div>
 
             <div
               id="accordion-color"
@@ -574,7 +552,7 @@ const Page = () => {
               <h2 id="accordion-color-heading-1">
                 <button
                   type="button"
-                  className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+                  className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
                   data-accordion-target="#accordion-color-body-1"
                   aria-expanded="true"
                   aria-controls="accordion-color-body-1"
@@ -605,10 +583,188 @@ const Page = () => {
               >
                 <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
                   <p className="mb-2 text-gray-500 dark:text-gray-400">
-                    Microsoft Word <br />
-                    Microsoft Excel <br />
-                    Microsoft PowerPoint <br />
-                    Microsoft Access
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m4.5 12.75 6 6 9-13.5"
+                      />
+                    </svg>
+                    Introducción a Microsoft Word 365. <br />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m4.5 12.75 6 6 9-13.5"
+                      />
+                    </svg>
+                    Herramientas de edición de documentos. <br />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m4.5 12.75 6 6 9-13.5"
+                      />
+                    </svg>
+                    Aplicar formatos a la fuente y párrafos <br />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m4.5 12.75 6 6 9-13.5"
+                      />
+                    </svg>
+                    Configuraciones de página y documento. <br />
+                    <br />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m4.5 12.75 6 6 9-13.5"
+                      />
+                    </svg>
+                    Introducción a PowerPoint 365. <br />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m4.5 12.75 6 6 9-13.5"
+                      />
+                    </svg>
+                    Creación y diseño de presentaciones. <br />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m4.5 12.75 6 6 9-13.5"
+                      />
+                    </svg>
+                    Aplicar animaciones y transiciones. <br />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m4.5 12.75 6 6 9-13.5"
+                      />
+                    </svg>
+                    Trabajar con plantillas de PowerPoint. <br />
+                    <br />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m4.5 12.75 6 6 9-13.5"
+                      />
+                    </svg>
+                    Introducción a hojas de cálculo en Excel. <br />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m4.5 12.75 6 6 9-13.5"
+                      />
+                    </svg>
+                    Trabajar con fórmulas y funciones en Excel. <br />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m4.5 12.75 6 6 9-13.5"
+                      />
+                    </svg>
+                    Trabajar con gráficos en Microsoft Excel. <br />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m4.5 12.75 6 6 9-13.5"
+                      />
+                    </svg>
+                    Funciones lógicas y de texto en Excel. <br />
                   </p>
                 </div>
               </div>
@@ -738,6 +894,48 @@ const Page = () => {
                   </p>
                 </div>
               </div>
+
+              <h2 id="accordion-color-heading-5">
+                <button
+                  type="button"
+                  className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+                  data-accordion-target="#accordion-color-body-5"
+                  aria-expanded="true"
+                  aria-controls="accordion-color-body-5"
+                >
+                  <span>Requerimientos</span>
+                  <svg
+                    data-accordion-icon
+                    className="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-color-body-5"
+                className="hidden"
+                aria-labelledby="accordion-color-heading-5"
+              >
+                <div className="rounded-b-xl p-5 border border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                  <p className="mb-2 text-gray-500 dark:text-gray-400">
+                    El participante debe contar con conocimientos básicos del
+                    uso de la computadora e Internet. Contar con una computadora
+                    con acceso a internet. Compromiso de parte del estudiante a
+                    acceder al curso al mensos 2 veces a la semana.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -768,6 +966,7 @@ const Page = () => {
           </div>
         </div>
       </section>
+
       {/** FOOTER */}
       <section className="bg-gray-900 text-gray-300 pt-20">
         <div className="px-10 mb-10">
