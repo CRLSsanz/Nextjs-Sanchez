@@ -16,9 +16,9 @@ const Page = () => {
 
             <div>
               <h1 className="w-full text-center px-6 uppercase text-5xl font-bold leading-tight mb-5">
-                Repara<span className="text-gray-300">c</span>iòn <br /> de PC y
+                Repara<span className="text-gray-200">c</span>iòn <br /> de PC y
                 <br />
-                Laptop<span className="text-gray-300">s</span>
+                Laptop<span className="text-gray-200">s</span>
               </h1>
 
               <div className=" px-6">
@@ -38,7 +38,7 @@ const Page = () => {
 
               <a
                 href="#section3"
-                className="uppercase py-3 px-10 bg-gradient-to-br from-red-400 to-red-500 text-white font-semibold tracking-[0.3em]"
+                className="uppercase py-3 px-10 bg-gradient-to-br from-red-400 bg-red-500 text-white font-semibold tracking-[0.3em]"
               >
                 Nuestros servicios
               </a>

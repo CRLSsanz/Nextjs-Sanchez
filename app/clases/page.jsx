@@ -33,907 +33,741 @@ const Page = () => {
             <div className="p-2 bg-gray-900">MENU</div>
           </div>
 
-          <div className="p-5">
-            <Image
-              src={"/images/clases-logo.png"}
-              width={500}
-              height={500}
-              alt="Clases"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className=" bg-gray-100  px-4 pb-10">
-        <div className="bg-white rounded-b-xl p-4">
-          <div className="bg-gradient-to-br from-cyan-400 to-blue-500  p-4 text-white rounded-lg">
-            <h1 className="text-xl font-bold py-2">Valores Agregados</h1>
-            <div className="py-3 border-b border-blue-300 flex flex-row justify-between">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5 inline-block mr-2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
-                  />
-                </svg>
-                Manual Digital
-              </div>
-              <h1 className="font-bold">Sì</h1>
-            </div>
-            <div className="py-3 border-b border-blue-300 flex flex-row justify-between">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5 inline-block mr-2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125"
-                  />
-                </svg>
-                Horario
-              </div>
-              <h1 className="font-bold">Personalizado</h1>
-            </div>
-            <div className="py-3 border-b border-blue-300 flex flex-row justify-between">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5 inline-block mr-2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                  />
-                </svg>
-                Duracion{" "}
-              </div>
-              <h1 className="font-bold">7 a 20 Horas</h1>
-            </div>
-            <div className="py-3 border-b border-blue-300 flex flex-row justify-between">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5 inline-block mr-2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
-                  />
-                </svg>
-                Diploma
-              </div>
-              <h1 className="font-bold">Sì</h1>
-            </div>
-            <div className="py-3 border-b border-blue-300 flex flex-row justify-between">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5 inline-block mr-2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
-                  />
-                </svg>
-                Aprendizaje Garantizado
-              </div>
-              <h1 className="font-bold">Sì</h1>
-            </div>
-            <div className="py-3 border-b border-blue-300 flex flex-row justify-between">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5 inline-block mr-2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
-                  />
-                </svg>
-                Clases en vivo
-              </div>
-              <h1 className="font-bold">Sì</h1>
-            </div>
-            <div className="pt-3 flex flex-row justify-between">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-5 h-5 inline-block mr-2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                  />
-                </svg>
-                Interacciòn con Instructor
-              </div>
-              <h1 className="font-bold">Sì</h1>
+          <div className="bg-cover bg-center bg-[url('/images/curso/clases01.jpg')] h-52 mb-10">
+            <div className="h-full flex flex-col justify-center items-center bg-gray-800/70 text-white">
+              <h1 className="text-4xl">Cursos de informatica</h1>
+              <h1 className="text-xl">Online y Presencial - Gratis </h1>
             </div>
           </div>
 
-          <div className="text-gray-800 my-5">
-            <div className="flex flex-row items-center mb-5">
-              <div className="w-16 mr-3">
+          <div className=" bg-gray-100 px-4 pb-10">
+            <div className="bg-white rounded-xl p-4">
+              <div className=" mb-5 ">
                 <Image
-                  src={"/images/clases-instructor.png"}
-                  width={60}
-                  height={60}
-                  alt="Instructor"
+                  src={"/images/curso/clases02.jpg"}
+                  width={500}
+                  height={500}
+                  alt="Clases"
+                  className=" rounded-lg"
                 />
               </div>
-              <div>
-                <h1 className="font-semibold">INSTRUCTOR</h1>
-                <h1 className="text-gray-500">Instructor Certificado</h1>
+
+              <div className="bg-gradient-to-br from-cyan-400 to-blue-500  p-4 text-white rounded-lg">
+                <h1 className="text-xl font-bold py-2">Valores Agregados</h1>
+                <div className="py-3 border-b border-blue-300 flex flex-row justify-between">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-5 h-5 inline-block mr-2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+                      />
+                    </svg>
+                    Manual Digital
+                  </div>
+                  <h1 className="font-bold">Sì</h1>
+                </div>
+                <div className="py-3 border-b border-blue-300 flex flex-row justify-between">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-5 h-5 inline-block mr-2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125"
+                      />
+                    </svg>
+                    Horario
+                  </div>
+                  <h1 className="font-bold">Personalizado</h1>
+                </div>
+                <div className="py-3 border-b border-blue-300 flex flex-row justify-between">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-5 h-5 inline-block mr-2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                      />
+                    </svg>
+                    Duracion{" "}
+                  </div>
+                  <h1 className="font-bold">7 a 20 Horas</h1>
+                </div>
+                <div className="py-3 border-b border-blue-300 flex flex-row justify-between">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-5 h-5 inline-block mr-2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
+                      />
+                    </svg>
+                    Diploma
+                  </div>
+                  <h1 className="font-bold">Sì</h1>
+                </div>
+                <div className="py-3 border-b border-blue-300 flex flex-row justify-between">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-5 h-5 inline-block mr-2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+                      />
+                    </svg>
+                    Aprendizaje Garantizado
+                  </div>
+                  <h1 className="font-bold">Sì</h1>
+                </div>
+                <div className="py-3 border-b border-blue-300 flex flex-row justify-between">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-5 h-5 inline-block mr-2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+                      />
+                    </svg>
+                    Clases en vivo
+                  </div>
+                  <h1 className="font-bold">Sì</h1>
+                </div>
+                <div className="pt-3 flex flex-row justify-between">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-5 h-5 inline-block mr-2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                      />
+                    </svg>
+                    Interacciòn con Instructor
+                  </div>
+                  <h1 className="font-bold">Sì</h1>
+                </div>
               </div>
-            </div>
-            <div className="flex flex-row items-center mt-5">
-              <div className="w-16 mr-3">
-                <Image
-                  src={"/images/clases-online.png"}
-                  width={60}
-                  height={60}
-                  alt="Online"
-                />
+
+              <div className="text-gray-800 my-5">
+                <div className="flex flex-row items-center mb-5">
+                  <div className="w-16 mr-3">
+                    <Image
+                      src={"/images/clases-instructor.png"}
+                      width={60}
+                      height={60}
+                      alt="Instructor"
+                    />
+                  </div>
+                  <div>
+                    <h1 className="font-semibold">INSTRUCTOR</h1>
+                    <h1 className="text-gray-500">Instructor Certificado</h1>
+                  </div>
+                </div>
+                <div className="flex flex-row items-center mt-5">
+                  <div className="w-16 mr-3">
+                    <Image
+                      src={"/images/clases-online.png"}
+                      width={60}
+                      height={60}
+                      alt="Online"
+                    />
+                  </div>
+                  <div>
+                    <h1 className="font-semibold">MODALIDAD</h1>
+                    <h1 className="text-gray-500">
+                      Online, en vivo y presencial
+                    </h1>
+                  </div>
+                </div>
+                <div className="flex flex-row items-center mt-5">
+                  <div className="w-16 mr-3">
+                    <Image
+                      src={"/images/clases-participantes.png"}
+                      width={60}
+                      height={60}
+                      alt="Participantes"
+                    />
+                  </div>
+                  <div>
+                    <h1 className="font-semibold">ESTUDIANTES</h1>
+                    <h1 className="text-gray-500">+500 Estudiantes felices</h1>
+                  </div>
+                </div>
+                <div className="flex flex-row items-center mt-5">
+                  <div className="w-16 mr-3">
+                    <Image
+                      src={"/images/clases-duracion.png"}
+                      width={60}
+                      height={60}
+                      alt="Duracion"
+                    />
+                  </div>
+                  <div>
+                    <h1 className="font-semibold">DURACION POR NIVEL</h1>
+                    <h1 className="text-gray-500">07/20 Horas</h1>
+                  </div>
+                </div>
               </div>
-              <div>
-                <h1 className="font-semibold">MODALIDAD</h1>
-                <h1 className="text-gray-500">Online, en vivo y presencial</h1>
+
+              <div className="flex justify-center mb-10">
+                <a
+                  href="#cursos"
+                  className=" text-white text-center bg-blue-600 px-10 py-2 rounded-full"
+                >
+                  Ver temario
+                </a>
               </div>
-            </div>
-            <div className="flex flex-row items-center mt-5">
-              <div className="w-16 mr-3">
-                <Image
-                  src={"/images/clases-participantes.png"}
-                  width={60}
-                  height={60}
-                  alt="Participantes"
-                />
-              </div>
-              <div>
-                <h1 className="font-semibold">ESTUDIANTES</h1>
-                <h1 className="text-gray-500">+500 Estudiantes felices</h1>
-              </div>
-            </div>
-            <div className="flex flex-row items-center mt-5">
-              <div className="w-16 mr-3">
-                <Image
-                  src={"/images/clases-duracion.png"}
-                  width={60}
-                  height={60}
-                  alt="Duracion"
-                />
-              </div>
-              <div>
-                <h1 className="font-semibold">DURACION POR NIVEL</h1>
-                <h1 className="text-gray-500">07/20 Horas</h1>
+
+              {/** MODALIDADES */}
+              <div className="p-5 text-gray-600 ">
+                <h1 className="text-3xl font-semibold mb-5 text-gray-800">
+                  Modalidades
+                </h1>
+                <p className="text-justify mb-2">
+                  <span className="font-semibold"> Cursos Cerrados.-</span> Si
+                  requieres de cursos privados en forma grupal o individual,
+                  nosotros ofrecemos cursos en nuestras instalaciones con
+                  horarios y temas de tu elección.
+                </p>
+                <p className="text-justify mb-2">
+                  <span className="font-semibold">Cursos On-Site.-</span> Si lo
+                  que busca es un curso dentro de las instalaciones de su
+                  empresa, esta es la mejor opción. Nos ajustamos a los
+                  requerimientos de horario y a los temas que quieras tratar en
+                  el curso.
+                </p>
+                <p className="text-justify mb-5">
+                  <span className="font-semibold">Renta de Aulas.-</span> Si
+                  necesitas una sala para impartir cursos o pláticas a tu
+                  personal o clientes, Corporativo IT cuenta con las
+                  instalaciones adecuadas para ofrecer el servicio de renta de
+                  salas.
+                </p>
               </div>
             </div>
           </div>
 
-          <div className="flex justify-center mb-10">
-            <a
-              href="#cursos"
-              className=" text-white text-center bg-blue-600 px-10 py-2 rounded-full"
-            >
-              Ver temario
-            </a>
-          </div>
-          {/**
-          <div id="cursos" className="mt-10">
-            <h1 className="text-center font-semibold text-3xl mb-5">Cursos</h1>
-            <div className="hidden mb-5">
-              <div className=" text-white bg-blue-600 px-4 py-3 rounded-full">
-                Cursos de Microsoft Office
-              </div>
+          {/** CURSOS IMAGENES */}
+          <div className="bg-white text-gray-600">
+            <div className="flex justify-center">
+              <h1 className="border-r-2 h-12 mb-10 border-orange-500"></h1>
             </div>
+            <div className="text-4xl px-5 mb-5">
+              Aprenda nuevas habilidades con nuestros cursos de Microsoft 365
+            </div>
+            <p className="px-5 mb-5">
+              En este emocionante programa de capacitación, exploraremos las
+              aplicaciones más populares de Office 365, brindándote las
+              habilidades y conocimientos necesarios para maximizar tu
+              productividad en el entorno laboral. A través de sesiones
+              interactivas y prácticas, descubrirás cómo sacar el máximo
+              provecho de herramientas como Word, Excel y PowerPoint.
+            </p>
+            <div className="grid grid-cols-2 gap-4 p-5">
+              <Image
+                src={"/images/curso/office-intro.jpg"}
+                width={500}
+                height={400}
+                alt="Intro"
+              />
 
-            <div
-              id="accordion-color"
-              data-accordion="collapse"
-              data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white"
-              className="mb-5"
-            >
-              <h2 id="accordion-color-heading-1">
-                <button
-                  type="button"
-                  className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
-                  data-accordion-target="#accordion-color-body-1"
-                  aria-expanded="true"
-                  aria-controls="accordion-color-body-1"
-                >
-                  <span>Cursos de Microsoft Office</span>
-                  <svg
-                    data-accordion-icon
-                    className="w-3 h-3 rotate-180 shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-              </h2>
-              <div
-                id="accordion-color-body-1"
-                className="hidden"
-                aria-labelledby="accordion-color-heading-1"
-              >
-                <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                  <p className="mb-2 text-gray-500 dark:text-gray-400">
-                    Microsoft Word <br />
-                    Microsoft Excel <br />
-                    Microsoft PowerPoint <br />
-                    Microsoft Access
-                  </p>
-                </div>
-              </div>
+              <Image
+                src={"/images/curso/office-word-basics.jpg"}
+                width={500}
+                height={400}
+                alt="Intro"
+              />
+              <Image
+                src={"/images/curso/office-word-intermediate.jpg"}
+                width={500}
+                height={400}
+                alt="Intro"
+              />
 
-              <h2 id="accordion-color-heading-2">
-                <button
-                  type="button"
-                  className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
-                  data-accordion-target="#accordion-color-body-2"
-                  aria-expanded="false"
-                  aria-controls="accordion-color-body-2"
-                >
-                  <span>Cursos de Hardware y Software</span>
-                  <svg
-                    data-accordion-icon
-                    className="w-3 h-3 rotate-180 shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-              </h2>
-              <div
-                id="accordion-color-body-2"
-                className="hidden"
-                aria-labelledby="accordion-color-heading-2"
-              >
-                <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-                  <p className="mb-2 text-gray-500 dark:text-gray-400">
-                    Partes de la computadora <br />
-                    Perifericos <br />
-                    Aplicaciones <br />
-                    Sistema Operativo <br />
-                    Manejo de Windows 11 <br />
-                  </p>
-                </div>
-              </div>
+              <Image
+                src={"/images/curso/office-excel-basics.png"}
+                width={500}
+                height={400}
+                alt="Intro"
+              />
+              <Image
+                src={"/images/curso/office-excel-intermediate.jpg"}
+                width={500}
+                height={400}
+                alt="Intro"
+              />
+              <Image
+                src={"/images/curso/office-excel-advanced.jpg"}
+                width={500}
+                height={400}
+                alt="Intro"
+              />
 
-              <h2 id="accordion-color-heading-3">
-                <button
-                  type="button"
-                  className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
-                  data-accordion-target="#accordion-color-body-3"
-                  aria-expanded="true"
-                  aria-controls="accordion-color-body-3"
-                >
-                  <span>Cursos de Diseno Grafico</span>
-                  <svg
-                    data-accordion-icon
-                    className="w-3 h-3 rotate-180 shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-              </h2>
-              <div
-                id="accordion-color-body-3"
-                className="hidden"
-                aria-labelledby="accordion-color-heading-3"
-              >
-                <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                  <p className="mb-2 text-gray-500 dark:text-gray-400">
-                    Photoshop <br />
-                    CorelDraw <br />
-                    Adobe Premier <br />
-                  </p>
-                </div>
-              </div>
-
-              <h2 id="accordion-color-heading-4">
-                <button
-                  type="button"
-                  className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
-                  data-accordion-target="#accordion-color-body-4"
-                  aria-expanded="true"
-                  aria-controls="accordion-color-body-4"
-                >
-                  <span>Cursos de Programacion Junior</span>
-                  <svg
-                    data-accordion-icon
-                    className="w-3 h-3 rotate-180 shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-              </h2>
-              <div
-                id="accordion-color-body-4"
-                className="hidden"
-                aria-labelledby="accordion-color-heading-4"
-              >
-                <div className="rounded-b-xl p-5 border border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                  <p className="mb-2 text-gray-500 dark:text-gray-400">
-                    Principios basicos <br />
-                    Algoritmos <br />
-                    Programando con Scract <br />
-                    Diseno web HTML
-                  </p>
-                </div>
-              </div>
+              <Image
+                src={"/images/curso/office-pp-beginner.png"}
+                width={500}
+                height={400}
+                alt="Intro"
+              />
+              <Image
+                src={"/images/curso/office-pp-expert.jpg"}
+                width={500}
+                height={400}
+                alt="Intro"
+              />
             </div>
           </div>
- */}
-        </div>
-      </section>
 
-      {/** CURSOS IMAGENES */}
-      <section className="py-10">
-        <div className="text-4xl px-5 mb-5">
-          Aprenda nuevas habilidades con nuestros cursos de Microsoft 365
-        </div>
-        <p className="px-5 mb-5">
-          En este emocionante programa de capacitación, exploraremos las
-          aplicaciones más populares de Office 365, brindándote las habilidades
-          y conocimientos necesarios para maximizar tu productividad en el
-          entorno laboral. A través de sesiones interactivas y prácticas,
-          descubrirás cómo sacar el máximo provecho de herramientas como Word,
-          Excel y PowerPoint.
-        </p>
-        <div className="grid grid-cols-2 gap-4 p-5">
-          <Image
-            src={"/images/curso/office-intro.jpg"}
-            width={500}
-            height={400}
-            alt="Intro"
-          />
+          {/** ACORDEON */}
+          <div id="cursos" className="bg-white text-gray-600 py-10">
+            <div className="p-5 mb-10">
+              <div className="mt-10">
+                <h1 className="text-center font-semibold text-3xl mb-5">
+                  Cursos
+                </h1>
 
-          <Image
-            src={"/images/curso/office-word-basics.jpg"}
-            width={500}
-            height={400}
-            alt="Intro"
-          />
-          <Image
-            src={"/images/curso/office-word-intermediate.jpg"}
-            width={500}
-            height={400}
-            alt="Intro"
-          />
-
-          <Image
-            src={"/images/curso/office-excel-basics.png"}
-            width={500}
-            height={400}
-            alt="Intro"
-          />
-          <Image
-            src={"/images/curso/office-excel-intermediate.jpg"}
-            width={500}
-            height={400}
-            alt="Intro"
-          />
-          <Image
-            src={"/images/curso/office-excel-advanced.jpg"}
-            width={500}
-            height={400}
-            alt="Intro"
-          />
-
-          <Image
-            src={"/images/curso/office-pp-beginner.png"}
-            width={500}
-            height={400}
-            alt="Intro"
-          />
-          <Image
-            src={"/images/curso/office-pp-expert.jpg"}
-            width={500}
-            height={400}
-            alt="Intro"
-          />
-        </div>
-      </section>
-
-      {/** MODALIDADES */}
-      <section className="p-5 text-gray-600 ">
-        <h1 className="text-3xl font-semibold mb-5 text-gray-800">
-          Modalidades
-        </h1>
-        <p className="text-justify mb-2">
-          <span className="font-semibold"> Cursos Cerrados.-</span> Si requieres
-          de cursos privados en forma grupal o individual, nosotros ofrecemos
-          cursos en nuestras instalaciones con horarios y temas de tu elección.
-        </p>
-        <p className="text-justify mb-2">
-          <span className="font-semibold">Cursos On-Site.-</span> Si lo que
-          busca es un curso dentro de las instalaciones de su empresa, esta es
-          la mejor opción. Nos ajustamos a los requerimientos de horario y a los
-          temas que quieras tratar en el curso.
-        </p>
-        <p className="text-justify mb-5">
-          <span className="font-semibold">Renta de Aulas.-</span> Si necesitas
-          una sala para impartir cursos o pláticas a tu personal o clientes,
-          Corporativo IT cuenta con las instalaciones adecuadas para ofrecer el
-          servicio de renta de salas.
-        </p>
-      </section>
-
-      {/** ACORDEON */}
-      <section>
-        <div className="p-5 mb-10">
-          <div id="cursos" className="mt-10">
-            <h1 className="text-center font-semibold text-3xl mb-5">Cursos</h1>
-
-            <div
-              id="accordion-color"
-              data-accordion="collapse"
-              data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white"
-              className="mb-5"
-            >
-              <h2 id="accordion-color-heading-1">
-                <button
-                  type="button"
-                  className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
-                  data-accordion-target="#accordion-color-body-1"
-                  aria-expanded="true"
-                  aria-controls="accordion-color-body-1"
+                <div
+                  id="accordion-color"
+                  data-accordion="collapse"
+                  data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white"
+                  className="mb-5"
                 >
-                  <span>Cursos de Microsoft Office</span>
-                  <svg
-                    data-accordion-icon
-                    className="w-3 h-3 rotate-180 shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
+                  <h2 id="accordion-color-heading-1">
+                    <button
+                      type="button"
+                      className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+                      data-accordion-target="#accordion-color-body-1"
+                      aria-expanded="true"
+                      aria-controls="accordion-color-body-1"
+                    >
+                      <span>Cursos de Microsoft Office</span>
+                      <svg
+                        data-accordion-icon
+                        className="w-3 h-3 rotate-180 shrink-0"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 10 6"
+                      >
+                        <path
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5 5 1 1 5"
+                        />
+                      </svg>
+                    </button>
+                  </h2>
+                  <div
+                    id="accordion-color-body-1"
+                    className="hidden"
+                    aria-labelledby="accordion-color-heading-1"
                   >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-              </h2>
-              <div
-                id="accordion-color-body-1"
-                className="hidden"
-                aria-labelledby="accordion-color-heading-1"
-              >
-                <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                  <p className="mb-2 text-gray-500 dark:text-gray-400">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m4.5 12.75 6 6 9-13.5"
-                      />
-                    </svg>
-                    Introducción a Microsoft Word 365. <br />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m4.5 12.75 6 6 9-13.5"
-                      />
-                    </svg>
-                    Herramientas de edición de documentos. <br />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m4.5 12.75 6 6 9-13.5"
-                      />
-                    </svg>
-                    Aplicar formatos a la fuente y párrafos <br />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m4.5 12.75 6 6 9-13.5"
-                      />
-                    </svg>
-                    Configuraciones de página y documento. <br />
-                    <br />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m4.5 12.75 6 6 9-13.5"
-                      />
-                    </svg>
-                    Introducción a PowerPoint 365. <br />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m4.5 12.75 6 6 9-13.5"
-                      />
-                    </svg>
-                    Creación y diseño de presentaciones. <br />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m4.5 12.75 6 6 9-13.5"
-                      />
-                    </svg>
-                    Aplicar animaciones y transiciones. <br />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m4.5 12.75 6 6 9-13.5"
-                      />
-                    </svg>
-                    Trabajar con plantillas de PowerPoint. <br />
-                    <br />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m4.5 12.75 6 6 9-13.5"
-                      />
-                    </svg>
-                    Introducción a hojas de cálculo en Excel. <br />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m4.5 12.75 6 6 9-13.5"
-                      />
-                    </svg>
-                    Trabajar con fórmulas y funciones en Excel. <br />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m4.5 12.75 6 6 9-13.5"
-                      />
-                    </svg>
-                    Trabajar con gráficos en Microsoft Excel. <br />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      className="w-4 h-4 inline-block mr-1 text-cyan-500"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m4.5 12.75 6 6 9-13.5"
-                      />
-                    </svg>
-                    Funciones lógicas y de texto en Excel. <br />
-                  </p>
-                </div>
-              </div>
+                    <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                      <p className="mb-2 text-gray-500 dark:text-gray-400">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                          stroke="currentColor"
+                          className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m4.5 12.75 6 6 9-13.5"
+                          />
+                        </svg>
+                        Introducción a Microsoft Word 365. <br />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                          stroke="currentColor"
+                          className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m4.5 12.75 6 6 9-13.5"
+                          />
+                        </svg>
+                        Herramientas de edición de documentos. <br />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                          stroke="currentColor"
+                          className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m4.5 12.75 6 6 9-13.5"
+                          />
+                        </svg>
+                        Aplicar formatos a la fuente y párrafos <br />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                          stroke="currentColor"
+                          className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m4.5 12.75 6 6 9-13.5"
+                          />
+                        </svg>
+                        Configuraciones de página y documento. <br />
+                        <br />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                          stroke="currentColor"
+                          className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m4.5 12.75 6 6 9-13.5"
+                          />
+                        </svg>
+                        Introducción a PowerPoint 365. <br />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                          stroke="currentColor"
+                          className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m4.5 12.75 6 6 9-13.5"
+                          />
+                        </svg>
+                        Creación y diseño de presentaciones. <br />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                          stroke="currentColor"
+                          className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m4.5 12.75 6 6 9-13.5"
+                          />
+                        </svg>
+                        Aplicar animaciones y transiciones. <br />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                          stroke="currentColor"
+                          className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m4.5 12.75 6 6 9-13.5"
+                          />
+                        </svg>
+                        Trabajar con plantillas de PowerPoint. <br />
+                        <br />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                          stroke="currentColor"
+                          className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m4.5 12.75 6 6 9-13.5"
+                          />
+                        </svg>
+                        Introducción a hojas de cálculo en Excel. <br />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                          stroke="currentColor"
+                          className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m4.5 12.75 6 6 9-13.5"
+                          />
+                        </svg>
+                        Trabajar con fórmulas y funciones en Excel. <br />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                          stroke="currentColor"
+                          className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m4.5 12.75 6 6 9-13.5"
+                          />
+                        </svg>
+                        Trabajar con gráficos en Microsoft Excel. <br />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="2"
+                          stroke="currentColor"
+                          className="w-4 h-4 inline-block mr-1 text-cyan-500"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="m4.5 12.75 6 6 9-13.5"
+                          />
+                        </svg>
+                        Funciones lógicas y de texto en Excel. <br />
+                      </p>
+                    </div>
+                  </div>
 
-              <h2 id="accordion-color-heading-2">
-                <button
-                  type="button"
-                  className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
-                  data-accordion-target="#accordion-color-body-2"
-                  aria-expanded="false"
-                  aria-controls="accordion-color-body-2"
-                >
-                  <span>Cursos de Hardware y Software</span>
-                  <svg
-                    data-accordion-icon
-                    className="w-3 h-3 rotate-180 shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
+                  <h2 id="accordion-color-heading-2">
+                    <button
+                      type="button"
+                      className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+                      data-accordion-target="#accordion-color-body-2"
+                      aria-expanded="false"
+                      aria-controls="accordion-color-body-2"
+                    >
+                      <span>Cursos de Hardware y Software</span>
+                      <svg
+                        data-accordion-icon
+                        className="w-3 h-3 rotate-180 shrink-0"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 10 6"
+                      >
+                        <path
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5 5 1 1 5"
+                        />
+                      </svg>
+                    </button>
+                  </h2>
+                  <div
+                    id="accordion-color-body-2"
+                    className="hidden"
+                    aria-labelledby="accordion-color-heading-2"
                   >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-              </h2>
-              <div
-                id="accordion-color-body-2"
-                className="hidden"
-                aria-labelledby="accordion-color-heading-2"
-              >
-                <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-                  <p className="mb-2 text-gray-500 dark:text-gray-400">
-                    Partes de la computadora <br />
-                    Perifericos <br />
-                    Aplicaciones <br />
-                    Sistema Operativo <br />
-                    Manejo de Windows 11 <br />
-                  </p>
-                </div>
-              </div>
+                    <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                      <p className="mb-2 text-gray-500 dark:text-gray-400">
+                        Partes de la computadora <br />
+                        Perifericos <br />
+                        Aplicaciones <br />
+                        Sistema Operativo <br />
+                        Manejo de Windows 11 <br />
+                      </p>
+                    </div>
+                  </div>
 
-              <h2 id="accordion-color-heading-3">
-                <button
-                  type="button"
-                  className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
-                  data-accordion-target="#accordion-color-body-3"
-                  aria-expanded="true"
-                  aria-controls="accordion-color-body-3"
-                >
-                  <span>Cursos de Diseno Grafico</span>
-                  <svg
-                    data-accordion-icon
-                    className="w-3 h-3 rotate-180 shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
+                  <h2 id="accordion-color-heading-3">
+                    <button
+                      type="button"
+                      className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+                      data-accordion-target="#accordion-color-body-3"
+                      aria-expanded="true"
+                      aria-controls="accordion-color-body-3"
+                    >
+                      <span>Cursos de Diseno Grafico</span>
+                      <svg
+                        data-accordion-icon
+                        className="w-3 h-3 rotate-180 shrink-0"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 10 6"
+                      >
+                        <path
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5 5 1 1 5"
+                        />
+                      </svg>
+                    </button>
+                  </h2>
+                  <div
+                    id="accordion-color-body-3"
+                    className="hidden"
+                    aria-labelledby="accordion-color-heading-3"
                   >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-              </h2>
-              <div
-                id="accordion-color-body-3"
-                className="hidden"
-                aria-labelledby="accordion-color-heading-3"
-              >
-                <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                  <p className="mb-2 text-gray-500 dark:text-gray-400">
-                    Photoshop <br />
-                    CorelDraw <br />
-                    Adobe Premier <br />
-                  </p>
-                </div>
-              </div>
+                    <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                      <p className="mb-2 text-gray-500 dark:text-gray-400">
+                        Photoshop <br />
+                        CorelDraw <br />
+                        Adobe Premier <br />
+                      </p>
+                    </div>
+                  </div>
 
-              <h2 id="accordion-color-heading-4">
-                <button
-                  type="button"
-                  className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
-                  data-accordion-target="#accordion-color-body-4"
-                  aria-expanded="true"
-                  aria-controls="accordion-color-body-4"
-                >
-                  <span>Cursos de Programacion Junior</span>
-                  <svg
-                    data-accordion-icon
-                    className="w-3 h-3 rotate-180 shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
+                  <h2 id="accordion-color-heading-4">
+                    <button
+                      type="button"
+                      className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+                      data-accordion-target="#accordion-color-body-4"
+                      aria-expanded="true"
+                      aria-controls="accordion-color-body-4"
+                    >
+                      <span>Cursos de Programacion Junior</span>
+                      <svg
+                        data-accordion-icon
+                        className="w-3 h-3 rotate-180 shrink-0"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 10 6"
+                      >
+                        <path
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5 5 1 1 5"
+                        />
+                      </svg>
+                    </button>
+                  </h2>
+                  <div
+                    id="accordion-color-body-4"
+                    className="hidden"
+                    aria-labelledby="accordion-color-heading-4"
                   >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-              </h2>
-              <div
-                id="accordion-color-body-4"
-                className="hidden"
-                aria-labelledby="accordion-color-heading-4"
-              >
-                <div className="rounded-b-xl p-5 border border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                  <p className="mb-2 text-gray-500 dark:text-gray-400">
-                    Principios basicos <br />
-                    Algoritmos <br />
-                    Programando con Scract <br />
-                    Diseno web HTML
-                  </p>
-                </div>
-              </div>
+                    <div className="rounded-b-xl p-5 border border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                      <p className="mb-2 text-gray-500 dark:text-gray-400">
+                        Principios basicos <br />
+                        Algoritmos <br />
+                        Programando con Scract <br />
+                        Diseno web HTML
+                      </p>
+                    </div>
+                  </div>
 
-              <h2 id="accordion-color-heading-5">
-                <button
-                  type="button"
-                  className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
-                  data-accordion-target="#accordion-color-body-5"
-                  aria-expanded="true"
-                  aria-controls="accordion-color-body-5"
-                >
-                  <span>Requerimientos</span>
-                  <svg
-                    data-accordion-icon
-                    className="w-3 h-3 rotate-180 shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
+                  <h2 id="accordion-color-heading-5">
+                    <button
+                      type="button"
+                      className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+                      data-accordion-target="#accordion-color-body-5"
+                      aria-expanded="true"
+                      aria-controls="accordion-color-body-5"
+                    >
+                      <span>Requerimientos</span>
+                      <svg
+                        data-accordion-icon
+                        className="w-3 h-3 rotate-180 shrink-0"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 10 6"
+                      >
+                        <path
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 5 5 1 1 5"
+                        />
+                      </svg>
+                    </button>
+                  </h2>
+                  <div
+                    id="accordion-color-body-5"
+                    className="hidden"
+                    aria-labelledby="accordion-color-heading-5"
                   >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5 5 1 1 5"
-                    />
-                  </svg>
-                </button>
-              </h2>
-              <div
-                id="accordion-color-body-5"
-                className="hidden"
-                aria-labelledby="accordion-color-heading-5"
-              >
-                <div className="rounded-b-xl p-5 border border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                  <p className="mb-2 text-gray-500 dark:text-gray-400">
-                    El participante debe contar con conocimientos básicos del
-                    uso de la computadora e Internet. Contar con una computadora
-                    con acceso a internet. Compromiso de parte del estudiante a
-                    acceder al curso al mensos 2 veces a la semana.
-                  </p>
+                    <div className="rounded-b-xl p-5 border border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                      <p className="mb-2 text-gray-500 dark:text-gray-400">
+                        El participante debe contar con conocimientos básicos
+                        del uso de la computadora e Internet. Contar con una
+                        computadora con acceso a internet. Compromiso de parte
+                        del estudiante a acceder al curso al mensos 2 veces a la
+                        semana.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -941,6 +775,7 @@ const Page = () => {
         </div>
       </section>
 
+      {/** CURSO GRATIS */}
       <section className="bg-fixed bg-cover bg-center bg-[url('/images/curso/curso-basico.jpg')] h-[calc(85vh)]">
         <div className="w-full h-full bg-gray-900/70 text-center text-gray-200 px-10 flex flex-col justify-center">
           <div className="text-4xl font-bold tracking-widest border-b text-white py-2">
@@ -957,7 +792,7 @@ const Page = () => {
             necesitas:
           </h1>
           <p className="py-2">
-            - Busqueda en internet <br /> - uso de correo electronico <br /> -
+            - Busqueda en internet <br /> - Uso de correo electronico <br /> -
             Procesamiento de textos <br /> - Uso del raton y del teclado{" "}
           </p>
           <div className="font-semibold">
