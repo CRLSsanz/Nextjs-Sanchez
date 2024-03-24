@@ -15,7 +15,12 @@ const Page = () => {
             </div>
 
             <div>
-              <h1 className="w-full text-center px-6 uppercase text-5xl font-bold leading-tight mb-5">
+              <h1 className="w-full text-center px-6 uppercase text-5xl lg:text-2xl font-bold leading-tight mb-5">
+                Repara<span className="text-gray-200">c</span>iòn <br /> de PC y
+                <br />
+                Laptop<span className="text-gray-200">s</span>
+              </h1>
+              <h1 className="w-full text-center px-6 uppercase text-xl lg:text-4xl font-bold leading-tight mb-5">
                 Repara<span className="text-gray-200">c</span>iòn <br /> de PC y
                 <br />
                 Laptop<span className="text-gray-200">s</span>

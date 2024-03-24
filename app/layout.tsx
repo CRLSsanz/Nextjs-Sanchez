@@ -8,13 +8,14 @@ import {
   Inter,
   Comfortaa,
 } from "next/font/google";
+
 import "./globals.css";
 
 const inter = Roboto_Condensed({
   weight: ["400", "700"],
-  //style: ["normal"],
+  style: ["normal"],
   subsets: ["latin"],
-  //display: "swap",
+  display: "swap",
 });
 
 export const metadata: Metadata = {

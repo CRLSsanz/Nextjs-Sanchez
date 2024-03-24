@@ -10,7 +10,6 @@ import {
   Allerta_Stencil,
   Megrim,
 } from "next/font/google";
-//import "./globals.css";
 
 const inter = Megrim({
   weight: ["400"],
