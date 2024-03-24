@@ -6,6 +6,7 @@ import {
   Moirai_One, //titulo ancho lineas alrededor
   Comfortaa, // parrafo
 } from "next/font/google";
+import Link from "next/link";
 
 const inter = Comfortaa({
   weight: ["400"],
@@ -22,62 +23,73 @@ const inter2 = Moirai_One({
 export default function page() {
   return (
     <div className={inter.className}>
-      <section className="bg-cover bg-center bg-[url('/images/home.jpg')] h-screen ">
-        <div className="bg-gray-900/90 text-gray-200 h-full w-full md:p-10 lg:px-20 xl:px-52 ">
-          <div className="relative h-full w-full p-6 md:p-12">
-            <div className="h-full flex flex-col justify-between">
-              <div className="text-gray-700 flex flex-row justify-between mb-10">
+      <section className="bg-cover bg-center bg-[url('/images/home.jpg')] min-h-screen lg:h-screen ">
+        <div className="bg-gray-900/90 text-gray-200 min-h-screen lg:h-screen w-full lg:px-16 xl:px-28 2xl:px-52">
+          <div className="relative min-h-screen w-full px-6 md:px-12">
+            <div className="min-h-[calc(100vh-50px)] flex flex-col justify-between">
+              <div className="text-gray-700 flex flex-row justify-between pt-5 lg:pt-14 mb-10">
                 <div className="{inter2.className}">
                   <h1 className="font-bold -tracking-[0.1em] -mt-0">CRLS</h1>
                 </div>
                 <h1>FB - TW - 1479</h1>
               </div>
 
-              <div className="text-base lg:flex lg:flex-row lg:justify-center xl:px-20">
-                <div className="lg:basis-3/5 lg:pt-0 lg:pr-20">
+              <div className="text-base lg:flex lg:flex-row lg:justify-center xl:pl-20 mb-10">
+                <div className="lg:basis-3/5 lg:pt-0">
                   <div className={inter2.className}>
-                    <h1 className="text-5xl lg:text-8xl mb-10">Welcome.</h1>
+                    <h1 className="text-5xl lg:text-7xl xl:text-8xl mb-10">
+                      Welcome.
+                    </h1>
                   </div>
-                  <div className="flex flex-row mb-10">
-                    <h2 className="w-0.5 bg-gradient-to-b from-blue-400 to-pink-300/50"></h2>
-                    <p className="w-full leading-7 text-sm lg:text-base pl-7 xl:pr-20">
+                  <div className="flex flex-row mb-20 lg:mb-0">
+                    <h2 className="w-[2px] bg-gradient-to-b from-blue-400 to-pink-300/50"></h2>
+                    <p className="w-full leading-7 text-sm lg:text-base pl-7 xl:pl-10">
                       En Sanz Technology somos una empresa experta en servicios
                       de Tecnología de la Información comprometida en brindar
-                      servicios de calidad. <br />
-                      <br /> Nos preocupamos por la experiencia de nuestros
-                      clientes.
+                      servicios de calidad.
+                      <br /> <br /> Nos preocupamos por la experiencia de
+                      nuestros clientes.
                     </p>
                   </div>
                 </div>
 
-                <div className="lg:basis-2/5">
-                  <h1 className="text-xl mb-3">Servicios</h1>
-                  <div className="relative px-7 pt-7">
-                    <h2 className="absolute top-0 left-0 w-24 h-0.5 bg-gradient-to-r from-blue-400 to-pink-300/50"></h2>
-                    <h2 className="absolute top-0 left-0 w-0.5 h-24 bg-gradient-to-b from-blue-400 to-pink-300/50"></h2>
+                <div className="lg:basis-2/5 xl:ml-20">
+                  <h1 className="text-2xl mb-3 xl:mb-7">Servicios</h1>
+                  <div className="relative px-7 xl:px-10 text-sm 2xl:text-base pt-7 xl:pt-10">
+                    <h2 className="absolute top-0 left-0 w-28 h-0.5 bg-gradient-to-r from-blue-400 to-pink-300/50"></h2>
+                    <h2 className="absolute top-0 left-0 w-0.5 h-28 bg-gradient-to-b from-blue-400 to-pink-300/50"></h2>
 
-                    <h2 className="">Reparacion de PC Laptop</h2>
-                    <h2 className="w-52 h-0.5 bg-gradient-to-r from-blue-400/50 to-pink-300/80 mb-5"></h2>
-                    <h2 className="">Repontenciar Computadoras</h2>
-                    <h2 className="w-60 h-0.5 bg-gradient-to-r from-blue-400/50 to-pink-300/80 mb-5"></h2>
-                    <h2 className="">Cursos particulares</h2>
+                    <Link href="/repair" className="cursor-pointer">
+                      Reparacion de PC Laptop
+                    </Link>
+                    <h2 className="w-48 h-0.5 bg-gradient-to-r from-blue-400/50 to-pink-300/80 mb-5"></h2>
+                    <Link href="/tecnologia" className="cursor-pointer">
+                      Repontenciar Computadoras
+                    </Link>
+                    <h2 className="w-56 h-0.5 bg-gradient-to-r from-blue-400/50 to-pink-300/80 mb-5"></h2>
+                    <Link href="/clases" className="cursor-pointer">
+                      Cursos particulares
+                    </Link>
+                    <h2 className="w-36 h-0.5 bg-gradient-to-r from-blue-400/50 to-pink-300/80 mb-5"></h2>
+                    <Link href="/" className="cursor-pointer">
+                      Asesoria Informatica
+                    </Link>
+
                     <h2 className="w-40 h-0.5 bg-gradient-to-r from-blue-400/50 to-pink-300/80 mb-5"></h2>
-                    <h2 className="">Asesoria Informatica</h2>
-                    <h2 className="w-44 h-0.5 bg-gradient-to-r from-blue-400/50 to-pink-300/80 mb-5"></h2>
                   </div>
                 </div>
               </div>
 
-              <div className="text-center lg:text-end text-xs">
+              <div className="text-center lg:text-end text-xs xl:text-sm py-3 lg:py-0">
                 @2024 crlscode.com
               </div>
             </div>
 
-            <h2 className="absolute top-0 left-0 bg-gradient-to-r from-blue-400 to-pink-300/80 flex w-60  h-3 lg:h-5 md:rounded-tl-3xl rounded-br-[50px]"></h2>
-            <h2 className="absolute top-3 lg:top-5 left-0 bg-gradient-to-b from-blue-400 to-pink-300/70 flex w-3 lg:w-5 h-24 lg:h-60 rounded-br-[50px]"></h2>
+            <h2 className="absolute top-0 left-0 lg:top-5 bg-gradient-to-r from-blue-400 to-pink-300/80 flex w-60 lg:w-72  h-3 lg:h-5 md:rounded-tl-3xl rounded-br-[50px]"></h2>
+            <h2 className="absolute top-3 lg:top-10 left-0 bg-gradient-to-b from-blue-400 to-pink-300/70 flex w-3 lg:w-5 h-24 lg:h-60 rounded-br-[50px]"></h2>
 
-            <h2 className="hidden absolute bottom-0 right-0 bg-gradient-to-r from-blue-400 to-pink-300/80 md:flex w-60 h-3 lg:h-5 rounded-br-3xl rounded-tl-[50px]"></h2>
-            <h2 className="hidden absolute bottom-3 md:bottom-5 right-0 bg-gradient-to-b from-blue-400 to-pink-300/80 md:flex w-3 lg:w-5 h-24 lg:h-60 rounded-tl-[50px]"></h2>
+            <h2 className="hidden absolute bottom-0 right-0 lg:bottom-5 bg-gradient-to-r from-blue-400 to-pink-300/80 md:flex w-60 lg:w-72 h-3 lg:h-5 rounded-br-3xl rounded-tl-[50px]"></h2>
+            <h2 className="hidden absolute md:bottom-3 lg:bottom-10 right-0 bg-gradient-to-b from-blue-400 to-pink-300/80 md:flex w-3 lg:w-5 h-24 lg:h-60 rounded-tl-[50px]"></h2>
           </div>
         </div>
       </section>

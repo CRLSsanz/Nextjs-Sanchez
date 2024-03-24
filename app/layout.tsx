@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "./globals.css";
 import {
   Roboto_Condensed,
   Roboto,
@@ -8,8 +9,6 @@ import {
   Inter,
   Comfortaa,
 } from "next/font/google";
-
-import "./globals.css";
 
 const inter = Roboto_Condensed({
   weight: ["400", "700"],
@@ -32,7 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+          href="https:/ 5/cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
           rel="stylesheet"
         />
       </head>

@@ -81,7 +81,7 @@ const Navbar = () => {
               } `}
               onClick={() => setNavbar(!navbar)}
             >
-              <Link href="/">Home</Link>
+              <Link href="/">home</Link>
             </div>
           </div>
 
@@ -93,7 +93,7 @@ const Navbar = () => {
               onClick={() => setNavbar(!navbar)}
             >
               <Link href="/repair" className="my-auto">
-                Reparacion
+                reparacion
               </Link>
             </div>
           </div>
@@ -106,7 +106,7 @@ const Navbar = () => {
               onClick={() => setNavbar(!navbar)}
             >
               <Link href="/tecnologia" className="my-auto">
-                Tecnologia
+                tecnologia
               </Link>
             </div>
           </div>
@@ -119,7 +119,7 @@ const Navbar = () => {
               onClick={() => setNavbar(!navbar)}
             >
               <Link href="/clases" className="my-auto">
-                Clases
+                cursos
               </Link>
             </div>
           </div>
