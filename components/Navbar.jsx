@@ -3,12 +3,27 @@ import Image from "next/image";
 import Footer from "@/components/Footer";
 import { useState } from "react";
 import Link from "next/link";
+import {
+  Barlow_Condensed, //para mucho texto y numeros
+  Orbitron,
+  Rubik_Doodle_Shadow, //titulos weight:400
+  Allerta_Stencil,
+  Megrim,
+} from "next/font/google";
+//import "./globals.css";
+
+const inter = Megrim({
+  weight: ["400"],
+  //style: ["normal"],
+  subsets: ["latin"],
+  //display: "swap",
+});
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <div>
+    <div className={inter.className}>
       <nav
         className={`w-10 fixed bottom-5 right-5 left-1/2X -ml-5X flex justify-center ${
           navbar

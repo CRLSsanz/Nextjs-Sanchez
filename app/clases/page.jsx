@@ -5,9 +5,28 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Script from "next/script";
 
+import {
+  Barlow_Condensed, //para mucho texto y numeros
+  Orbitron,
+  Rubik_Doodle_Shadow, //titulos weight:400
+  Allerta_Stencil,
+  Megrim, // minuscula imprenta egipcio
+  Gugi, //Titulo mayuscula
+  Stick, //PAra game
+  Text_Me_One,
+} from "next/font/google";
+//import "./globals.css";
+
+const inter = Text_Me_One({
+  weight: ["400"],
+  //style: ["normal"],
+  subsets: ["latin"],
+  //display: "swap",
+});
+
 const Page = () => {
   return (
-    <div>
+    <div className={inter.className}>
       <Script
         src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
         async
