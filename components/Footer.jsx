@@ -203,9 +203,8 @@ const Footer = () => {
       {/** FOOTER */}
       <div className="BBbg-[#050505] bg-gray-50 text-gray-500 text-center text-sm py-6">
         <h4 className="px-12 tracking-wider">
-          © <span className="fam-number font-extralight">2021-2024</span> Sanz™
-          All Rights Reserved.{" "}
-          <span className="hidden">Designed by CRLSCODE</span>
+          ©<span className="fam-number font-extralight">2024</span> Sanz™ All
+          Rights Reserved. <span className="hidden">Designed by CRLSCODE</span>
         </h4>
       </div>
     </section>
