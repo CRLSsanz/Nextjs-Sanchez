@@ -27,9 +27,15 @@ export default function page() {
         <div className="bg-gray-900/90 text-gray-200 min-h-screen lg:h-screen w-full lg:px-16 xl:px-28 2xl:px-52">
           <div className="relative min-h-screen w-full px-6 md:px-12">
             <div className="min-h-[calc(100vh-50px)] flex flex-col justify-between">
-              <div className="text-gray-700 flex flex-row justify-between pt-5 lg:pt-14 mb-10">
-                <div className="{inter2.className}">
-                  <h1 className="font-bold -tracking-[0.1em] -mt-0">CRLS</h1>
+              <div className="text-gray-500 text-sm flex flex-row justify-between items-end pt-5 lg:pt-14 mb-10">
+                <div className="flex flex-row items-end">
+                  <Image
+                    src={"/images/sanz.png"}
+                    width={30}
+                    height={30}
+                    alt="Logo"
+                  />
+                  <h1 className="font-bold">ANZ Technology</h1>
                 </div>
                 <h1>FB - TW - 1479</h1>
               </div>
@@ -80,7 +86,7 @@ export default function page() {
                 </div>
               </div>
 
-              <div className="text-center lg:text-end text-xs xl:text-sm py-3 lg:py-0">
+              <div className="text-center text-gray-400 lg:text-end text-xs xl:text-sm py-3 lg:py-0">
                 @2024 crlscode.com
               </div>
             </div>

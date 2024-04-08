@@ -1,15 +1,9 @@
 "use client";
 import Image from "next/image";
-import Footer from "@/components/Footer";
 import { useState } from "react";
 import Link from "next/link";
-import {
-  Barlow_Condensed, //para mucho texto y numeros
-  Orbitron,
-  Rubik_Doodle_Shadow, //titulos weight:400
-  Allerta_Stencil,
-  Megrim,
-} from "next/font/google";
+
+import { Megrim } from "next/font/google";
 
 const inter = Megrim({
   weight: ["400"],

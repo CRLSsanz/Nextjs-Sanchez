@@ -5,6 +5,15 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useState } from "react";
 
+import { Roboto_Condensed } from "next/font/google";
+
+const inter = Roboto_Condensed({
+  weight: ["400", "700"],
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
 const getRam = [
   {
     image: "ram-ddr5.png",
@@ -73,7 +82,7 @@ const Page = () => {
   const [showInfo, setShowInfo] = useState(false);
 
   return (
-    <div>
+    <div className={inter.className}>
       <section className="bg-cover bg-center bg-[url('/images/tecnologia1.jpg')] h-screen">
         <div className="w-full h-full bg-gray-900/50 px-6 lg:flex lg:justify-center">
           <div className="lg:w-[1000px] h-full pt-6 text-gray-100 flex flex-col justify-between">

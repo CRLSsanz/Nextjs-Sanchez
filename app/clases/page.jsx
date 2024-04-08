@@ -5,19 +5,9 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Script from "next/script";
 
-import {
-  Barlow_Condensed, //para mucho texto y numeros
-  Orbitron,
-  Rubik_Doodle_Shadow, //titulos weight:400
-  Allerta_Stencil,
-  Megrim, // minuscula imprenta egipcio
-  Gugi, //Titulo mayuscula
-  Stick, //PAra game
-  Text_Me_One,
-} from "next/font/google";
-//import "./globals.css";
+import { Roboto } from "next/font/google";
 
-const inter = Text_Me_One({
+const inter = Roboto({
   weight: ["400"],
   //style: ["normal"],
   subsets: ["latin"],
@@ -833,7 +823,7 @@ const Page = () => {
       </section>
 
       {/** FOOTER */}
-      <section className="lg:flex lg:flex-col lg:items-center lg:justify-center bg-gray-900 text-gray-300 pt-20">
+      <section className="hidden lg:flex lg:flex-col lg:items-center lg:justify-center bg-gray-900 text-gray-300 pt-20">
         <div className="lg:w-[600px]">
           <div className="px-10 mb-10">
             <h1 className="text-white font-bold tracking-[0.1em] mb-4">
@@ -1012,7 +1002,7 @@ const Page = () => {
           © Copyright 2024 Sanz Technology <br /> All Rights Reserved.
         </div>
       </section>
-
+      <Footer />
       <Navbar />
     </div>
   );

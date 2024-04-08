@@ -3,17 +3,9 @@ import Image from "next/image";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 //import Link from "next/link";
-import {
-  Barlow_Condensed, //para mucho texto y numeros
-  Orbitron,
-  Rubik_Doodle_Shadow, //titulos weight:400
-  Allerta_Stencil,
-  Gugi, //Titulo mayuscula
-  Stick, //PAra game
-  Text_Me_One,
-} from "next/font/google";
+import { Text_Me_One } from "next/font/google";
 
-const inter = Barlow_Condensed({
+const inter = Text_Me_One({
   weight: ["400"],
   //style: ["normal"],
   subsets: ["latin"],
@@ -162,7 +154,7 @@ const Page = () => {
             <div className="w-full flex justify-center">
               <a
                 href="#section3"
-                className="px-10 text-xs uppercase py-3 border-2 border-red-500 text-red-500 font-semibold tracking-[0.2em]"
+                className="px-10 text-sm uppercase py-3 border-2 border-red-500 text-red-500 font-semibold tracking-[0.2em]"
               >
                 Programar cita ahora
               </a>

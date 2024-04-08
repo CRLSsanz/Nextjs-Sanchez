@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 const Footer = () => {
   return (
     <section className="bg-[#111111] text-gray-400">
@@ -25,7 +24,7 @@ const Footer = () => {
           </p>
           <div className="w-full flex flex-col py-10">
             <input
-              className="bg-black border-none text-gray-200 focus:outline-none text-center p-3 deco mb-4"
+              className="bg-black border-none text-gray-100 focus:outline-none text-center p-3 deco mb-4"
               type="text"
               placeholder="Email Address"
             />
@@ -35,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="px-5 bg-black/90 sm:px-20 md:px-5 lg:px-20 xl:px-20">
+        <div className="px-5 bg-black/90 sm:px-20 md:px-5 lg:px-20 xl:px-20 md:pb-10">
           <div className="flex justify-center py-10">
             <a href="#home" className="p-2 text-white animate-bounce">
               <svg
@@ -51,28 +50,49 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="text-gray-400 flex flex-col md:flex-row justify-between">
-            <div className="md:w-1/3 mb-5">
-              <h1 className="text-gray-100 fam-logo font-bold tracking-wider text-2xl mb-5">
-                CRL<span className="text-cyan-500">S</span> CODE
+          <div className="text-gray-300 flex flex-col md:flex-row justify-between">
+            <div className="md:w-1/3 mb-10">
+              <h1 className="text-gray-100 fam-logo tracking-wider text-3xl mb-5 flex flex-row items-end lg:-mt-5">
+                <Image
+                  src={"/images/sanz.png"}
+                  width={50}
+                  height={50}
+                  alt="Logo"
+                />
+                <span className="Xtext-teal-600 font-semibold">ANZ</span>
+                <span className="ml-2 text-base pb-[1px]">Technology</span>
               </h1>
               <p className="md:leading-loose">
-                Realmente nos preocupamos por la experiencia de nuestros
-                clientes. Con nuestros años de experiencia atendiendo a más de
-                50 clientes al mes. Nos esforzamos por construir relaciones
-                duraderas. Respaldamos nuestro trabajo el 100% del tiempo.
+                En Sanz Technology somos una empresa experta en servicios de
+                Tecnología de la Información comprometida en brindar servicios
+                de calidad a cada uno de sus clientes. Nos esforzamos por
+                construir relaciones duraderas. Respaldamos nuestro trabajo el
+                100% del tiempo.
               </p>
             </div>
 
-            <div className="mb-5">
-              <h2 className="text-gray-200 text-2xl mb-5">Navegate</h2>
+            <div className="hidden mb-5">
+              <h2 className="text-gray-100 text-2xl mb-5">Navegate</h2>
               <h4 className="leading-loose">
                 Home <br /> About <br /> Skills <br /> Work <br /> Contact
               </h4>
             </div>
 
-            <div className="mb-5">
-              <h2 className="text-gray-200 text-2xl mb-5">Contact</h2>
+            <div className="md:w-1/5 mb-10">
+              <h1 className="text-gray-100 text-2xl mb-5">Blog</h1>
+              <p className="md:leading-loose mb-3">
+                Visita nuestro blog y mantente actualizado en el mundo de
+                Tecnología de la Información
+              </p>
+              <input
+                type="text"
+                className="w-full py-2 px-4 focus:outline-none bg-transparent border border-gray-600 "
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div className="mb-10">
+              <h2 className="text-gray-100 text-2xl mb-5">Contact</h2>
               <div className="mb-5 leading-loose">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -120,11 +140,50 @@ const Footer = () => {
                   />
                 </svg>
                 <span className="fam-number ml-3">+51 990 441 430</span>
+                <div className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span className="ml-3">Horario Oficina L-V de 8am - 6pm</span>
+                </div>
+                <div className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                    />
+                  </svg>
+                  <span className="ml-3">Presencia en Lima - Perù</span>
+                </div>
               </div>
             </div>
 
             <div className="mb-10">
-              <h2 className="text-gray-200 text-2xl mb-5">Follow</h2>
+              <h2 className="text-gray-100 text-2xl mb-5">Follow</h2>
 
               {/** SVG SOCIAL */}
               <div class="flex flex-wrap md:flex-col lg:flex-row JJjustify-center mb-10">
