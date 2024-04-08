@@ -67,7 +67,7 @@ const Navbar = () => {
             : "opacity-0 pointer-events-none transform transition-all duration-1000 "
         }`}
       >
-        <div className="h-auto text-white text-lg z-50 tracking-widest">
+        <div className="h-auto text-white font-bold text-lg z-50 tracking-widest">
           <div className="h-20 flex items-center mb-4">
             <div
               className={`bg-gray-700 flex items-center justify-center w-full transform transition-all duration-300 ${
@@ -87,7 +87,7 @@ const Navbar = () => {
               onClick={() => setNavbar(!navbar)}
             >
               <Link href="/repair" className="my-auto">
-                reparacion
+                reparación
               </Link>
             </div>
           </div>
@@ -100,7 +100,7 @@ const Navbar = () => {
               onClick={() => setNavbar(!navbar)}
             >
               <Link href="/tecnologia" className="my-auto">
-                tecnologia
+                tecnología
               </Link>
             </div>
           </div>

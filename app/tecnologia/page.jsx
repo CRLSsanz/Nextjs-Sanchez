@@ -86,10 +86,15 @@ const Page = () => {
       <section className="bg-cover bg-center bg-[url('/images/tecnologia1.jpg')] h-screen">
         <div className="w-full h-full bg-gray-900/50 px-6 lg:flex lg:justify-center">
           <div className="lg:w-[1000px] h-full pt-6 text-gray-100 flex flex-col justify-between">
-            <div className="text-gray-400 text-2xl font-bold tracking-wide">
-              Sanz<span className="text-green-500">.</span>
+            <div className="flex flex-row items-end">
+              <Image
+                src={"/images/sanz.png"}
+                width={30}
+                height={30}
+                alt="Logo"
+              />
+              <h1 className="font-bold text-gray-400">ANZ Technology</h1>
             </div>
-
             <div className="text-end">
               <h1 className="w-full uppercase text-5xl lg:text-8xl font-bold mb-2 leading-tight">
                 Repoten<span className="text-teal-300">c</span>ia
@@ -98,7 +103,7 @@ const Page = () => {
               </h1>
               <p className="text-xl lg:text-4xl lg:leading-relaxed font-semibold pr-5 mb-10">
                 Aumenta 10 veces <br />
-                mas la velocidad <br />
+                más la velocidad <br />
                 de tu pc o laptop
               </p>
 
@@ -144,8 +149,8 @@ const Page = () => {
           <h1 className="uppercase font-semibold tracking-[0.2em] lg:text-xl lg:mb-5">
             Hello
           </h1>
-          <div className="w-[220px] lg:w-[300px] text-center text-white text-3xl lg:text-5xl font-semibold pb-3 border-b border-green-400 mb-5 lg:mb-10">
-            We Are Sanz
+          <div className="w-[240px] lg:w-[330px] text-center text-white text-3xl lg:text-5xl font-semibold pb-3 border-b border-green-400 mb-5 lg:mb-10">
+            We Are Sanz Tech
           </div>
           <p className="lg:w-[500px] lg:leading-7 text-center text-gray-900 px-10 mb-10">
             We have the highest trained technicians in Sanz, and we genuinely
@@ -223,7 +228,7 @@ const Page = () => {
             <a href="#product" className="text-green-500">
               SSD NVMe{" "}
             </a>{" "}
-            son mas rapidos que los tradicionales
+            son más rápidos que los tradicionales
           </p>
 
           <div className="flex items-center text-green-500 mb-5">
@@ -308,7 +313,7 @@ const Page = () => {
             16GB 4800 MHZ DDR5
           </h1>
           <p className="text-center px-5 text-gray-500 mb-5">
-            +1 slot libre para agregar otra memoria ram y tener la maxima
+            +1 slot libre para agregar otra memoria ram y tener la máxima
             capacidad soportada de 32GB o 64GB.
           </p>
           <a href="#product" className="text-green-500">

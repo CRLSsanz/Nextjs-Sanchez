@@ -19,9 +19,15 @@ const Page = () => {
         <div className="w-full xl:flex xl:justify-center h-full bg-gray-900/20">
           <div className="xl:w-[1360px] relative h-full pt-6 text-gray-100 flex flex-col justify-between">
             <div className="text-gray-300 lg:flex lg:flex-row justify-between lg:items-center lg:px-5">
-              <h1 className=" text-xl font-bold tracking-wide pl-6">
-                Sanz<span className="text-red-500">.</span>
-              </h1>
+              <div className="flex flex-row items-end Xtext-teal-500 font-bold pl-5">
+                <Image
+                  src={"/images/sanz.png"}
+                  width={30}
+                  height={30}
+                  alt="Logo"
+                />
+                <h1 className="font-bold">ANZ Technology</h1>
+              </div>
               <div className="hidden lg:flex flex-row gap-x-5 tracking-widest">
                 <h4>About</h4>
                 <h4>Services</h4>
@@ -98,7 +104,7 @@ const Page = () => {
                   <h1 className="text-2xl text-black font-semibold my-4">
                     Agendar una cita de trabajo
                   </h1>
-                  <p className="text-gray-500">
+                  <p className="text-gray-500 font-semibold">
                     Solicite una cita en línea, o llámenos hoy para programar su
                     próxima visita.
                   </p>
@@ -119,7 +125,7 @@ const Page = () => {
                   <h1 className="text-2xl text-black font-semibold my-4">
                     Nosotros vamos a ti
                   </h1>
-                  <p className="text-gray-500">
+                  <p className="text-gray-500 font-semibold">
                     Uno de nuestros técnicos expertos se reunirá con usted en su
                     casa u oficina para reparar su computadora rápidamente.
                   </p>
@@ -141,7 +147,7 @@ const Page = () => {
                   <h1 className="text-2xl text-black font-semibold my-4">
                     Fijado en el sitio o recogido
                   </h1>
-                  <p className="text-gray-500">
+                  <p className="text-gray-500 font-semibold">
                     Repararemos su computadora frente a usted o la recogeremos y
                     se la devolveremos cuando esté completa.
                   </p>
@@ -196,7 +202,7 @@ const Page = () => {
         <div className="xl:w-[1360px]">
           <div className="w-full text-center py-5">
             <h1 className="text-3xl font-bold mb-4">NUESTROS SERVICIOS</h1>
-            <p className="text-gray-500 text-lg mb-4">
+            <p className="text-gray-500 font-semibold text-lg mb-4">
               Laptop o computadora de escritorio <br /> Empresarial o
               Residencial.
               <br /> Te tenemos cubierto.
@@ -215,7 +221,7 @@ const Page = () => {
                   <h1 className="text-2xl text-black font-semibold mb-4">
                     AJUSTES DEL SISTEMA
                   </h1>
-                  <p className="text-gray-500 mb-4">
+                  <p className="text-gray-500 font-semibold mb-4">
                     Reparaciones corruptas de Windows/iOS <br />
                     Congelación o fallas en la computadora <br />
                     Malware, virus y ventanas emergentes <br />
@@ -237,7 +243,7 @@ const Page = () => {
                   <h1 className="text-2xl text-black font-semibold mb-4">
                     REPARACIÓN DE HARDWARE
                   </h1>
-                  <p className="text-gray-500 mb-4">
+                  <p className="text-gray-500 font-semibold mb-4">
                     Pantallas de portátiles rotas <br />
                     Problemas de carga <br />
                     Reemplazo del disco duro <br />
@@ -259,7 +265,7 @@ const Page = () => {
                   <h1 className="text-2xl text-black font-semibold mb-4">
                     REDES
                   </h1>
-                  <p className="text-gray-500 mb-4">
+                  <p className="text-gray-500 font-semibold mb-4">
                     Configuraciones WIFI <br />
                     VPN/Escritorio remoto <br />
                     Compartir archivos e impresoras <br />
@@ -281,7 +287,7 @@ const Page = () => {
                   <h1 className="text-2xl text-black font-semibold mb-4">
                     RECUPERACIÓN DE DATOS{" "}
                   </h1>
-                  <p className="text-gray-500 mb-4">
+                  <p className="text-gray-500 font-semibold mb-4">
                     Sistemas Windows o Apple <br />
                     Discos duros fallidos <br />
                     Particiones eliminadas <br />

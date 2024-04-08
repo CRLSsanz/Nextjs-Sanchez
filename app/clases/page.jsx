@@ -28,7 +28,7 @@ const Page = () => {
             <div className="h-full flex flex-col justify-center items-center bg-gray-200/80 text-gray-600">
               <div className="text-3xl text-black font-medium mb-2">Cursos</div>
               <div className="text-center tracking-widest px-14 pt-2">
-                Inicio {" > "} Cursos Libres {" > "} Ofimatica: Herramientas de
+                Inicio {" > "} Cursos Libres {" > "} Ofimática: Herramientas de
                 Microsoft Office 365
               </div>
             </div>
@@ -44,7 +44,7 @@ const Page = () => {
 
           <div className="bg-cover bg-center bg-[url('/images/curso/clases01.jpg')] h-52 lg:h-80 mb-10">
             <div className="h-full flex flex-col justify-center items-center lg:font-semibold bg-gray-800/70 text-white">
-              <h1 className="text-4xl lg:text-5xl">Cursos de informatica</h1>
+              <h1 className="text-4xl lg:text-5xl">Cursos de informática</h1>
               <h1 className="text-xl lg:text-2xl">
                 Online y Presencial - Gratis{" "}
               </h1>
@@ -122,7 +122,7 @@ const Page = () => {
                           d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                         />
                       </svg>
-                      Duracion{" "}
+                      Duración{" "}
                     </div>
                     <h1 className="font-bold">7 a 20 Horas</h1>
                   </div>
@@ -202,7 +202,7 @@ const Page = () => {
                           d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                         />
                       </svg>
-                      Interacciòn con Instructor
+                      Interacción con Instructor
                     </div>
                     <h1 className="font-bold">Sì</h1>
                   </div>
@@ -669,7 +669,7 @@ const Page = () => {
                       aria-expanded="true"
                       aria-controls="accordion-color-body-3"
                     >
-                      <span>Cursos de Diseno Grafico</span>
+                      <span>Cursos de Diseño Grafico</span>
                       <svg
                         data-accordion-icon
                         className="w-3 h-3 rotate-180 shrink-0"
@@ -710,7 +710,7 @@ const Page = () => {
                       aria-expanded="true"
                       aria-controls="accordion-color-body-4"
                     >
-                      <span>Cursos de Programacion Junior</span>
+                      <span>Cursos de Programación Junior</span>
                       <svg
                         data-accordion-icon
                         className="w-3 h-3 rotate-180 shrink-0"
@@ -807,12 +807,12 @@ const Page = () => {
               Curso gratuito para personas mayores
             </h1>
             <h1>
-              Este curso de 4 sesiones cubrira todos los aspectos basicos que
+              Este curso de 4 sesiones cubrirá todos los aspectos básicos que
               necesitas:
             </h1>
             <p className="py-2">
-              - Busqueda en internet <br /> - Uso de correo electronico <br /> -
-              Procesamiento de textos <br /> - Uso del raton y del teclado{" "}
+              - Búsqueda en internet <br /> - Uso de correo electrónico <br /> -
+              Procesamiento de textos <br /> - Uso del ratón y del teclado{" "}
             </p>
             <div className="font-semibold">
               <h1>Martes 9 de Abril de 10:00 a 13:15 horas</h1>

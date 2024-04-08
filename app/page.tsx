@@ -43,7 +43,7 @@ export default function page() {
               <div className="text-base lg:flex lg:flex-row lg:justify-center xl:pl-20 mb-10">
                 <div className="lg:basis-3/5 lg:pt-0">
                   <div className={inter2.className}>
-                    <h1 className="text-5xl lg:text-7xl xl:text-8xl mb-10">
+                    <h1 className="text-5xl lg:text-7xl xl:text-8xl mb-10 pt-16 lg:pt-0">
                       Welcome.
                     </h1>
                   </div>
@@ -66,19 +66,19 @@ export default function page() {
                     <h2 className="absolute top-0 left-0 w-0.5 h-28 bg-gradient-to-b from-blue-400 to-pink-300/50"></h2>
 
                     <Link href="/repair" className="cursor-pointer">
-                      Reparacion de PC Laptop
+                      Reparación de PC Laptop
                     </Link>
                     <h2 className="w-48 h-0.5 bg-gradient-to-r from-blue-400/50 to-pink-300/80 mb-5"></h2>
                     <Link href="/tecnologia" className="cursor-pointer">
-                      Repontenciar Computadoras
+                      Repotenciar computadoras
                     </Link>
-                    <h2 className="w-56 h-0.5 bg-gradient-to-r from-blue-400/50 to-pink-300/80 mb-5"></h2>
+                    <h2 className="w-52 h-0.5 bg-gradient-to-r from-blue-400/50 to-pink-300/80 mb-5"></h2>
                     <Link href="/clases" className="cursor-pointer">
                       Cursos particulares
                     </Link>
                     <h2 className="w-36 h-0.5 bg-gradient-to-r from-blue-400/50 to-pink-300/80 mb-5"></h2>
                     <Link href="/" className="cursor-pointer">
-                      Asesoria Informatica
+                      Asesoría Informática
                     </Link>
 
                     <h2 className="w-40 h-0.5 bg-gradient-to-r from-blue-400/50 to-pink-300/80 mb-5"></h2>
